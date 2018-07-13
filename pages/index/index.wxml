@@ -1,0 +1,46 @@
+<view class='container'>
+  <scroll-view class='scroll' scroll-y='true'>
+    <view class='top_view'>
+      <swiper indicator-dots="{{indicator}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='swipper_view'>
+        <block wx:for="{{imgUrls}}">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class='navigator'>
+      <view class="weui-grids">
+        <view class="weui-grid" wx:for="{{menu}}" wx:key="name">
+          <navigator url="{{item.url+'?name='+item.name+'&code='+item.code}}">
+            <view class='weui-grid__bg'>
+              <view class="weui-grid__icon" style='background-color:{{item.backgroudcolour}}'>
+                <image src=" {{item.images}}" mode="scaleToFill" />
+              </view>
+              <text class="weui-grid__label">{{item.text}}</text>
+            </view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+
+    <view class='news'>
+      <view class='news_title'>
+        <text class='normal'>校内</text>
+        <text class='red'>快报</text>
+      </view>
+      <view class='news_content' selectable="true" scroll-y="true">
+        <swiper autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" vertical="{{vertical}}" class='swipper_view_text'>
+          <block wx:for="{{news}}">
+            <swiper-item>
+              <text class='sroll_text'>{{item}}</text>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+
+      <view class='news_button'>｜更多</view>
+    </view>
+  </scroll-view>
+
+</view>
