@@ -209,9 +209,10 @@
 }
 .swipper_view_text{
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   margin-top: 10%;
   font-size: 12px;
+  height: 70rpx
 }
 
 
