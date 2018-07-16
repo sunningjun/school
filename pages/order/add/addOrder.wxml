@@ -1,0 +1,31 @@
+<view class='container'>
+  <view class='detail_image'>
+    <scroll-view class="scroll" scroll-y="true">
+      <view wx:for="{{cars}}">
+        <view class="cart_container">
+          <image class="product_image" src="{{item.pic}}" ></image>
+          <view class="product_image_title">
+            <text class="product_image_title_name">{{item.name}}</text>
+              <text class="product_image_title_price">￥{{item.price}}</text>
+          </view>
+          <view class='product_num'>
+            <text class>X{{item.num}}</text>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class='footer'>
+    <view class='footer_pay'>
+      <view class='footer_pay_text'>
+        <text class='out_of_pocket'>合计:</text>
+        <text class='money'>￥{{totalMoney}}</text>
+      </view>
+    </view>
+    <view class='footer_add'>
+      <view class='footer_add_text'>
+        <text>去下单</text>
+      </view>
+    </view>
+  </view>
+</view>

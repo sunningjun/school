@@ -301,6 +301,27 @@ Page({
       })
     }
   },
+  turnToDetail:function(e){
+    var that = this;
+    var id = e.currentTarget.id;
+    var productList=this.data.productList;
+    for(var i=0;i<productList.length;i++){
+      if(id==productList[i].id){
+        productList[i].num=1;
+        this.setData({
+          product:productList[i]
+        });
+        break;
+      }
+    }
+    let str = JSON.stringify(this.data.product);
+    wx.navigateTo({
+      url: 'detail/detail?product=' + str,
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+  },
   cascadeToggle: function (e) {
     var that = this;      //切换购物车开与关
     that.cascadePopup(e);

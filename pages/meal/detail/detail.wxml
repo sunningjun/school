@@ -1,8 +1,73 @@
 <view class='container'>
-  <view class='header'></view>
-  <view class='middle'></view>
-  <view class='bottom'></view>
-    <view class='footer'></view>
+  <scroll-view class='scroll'  scroll-y='true'>
+   <view class='header'>
+    <view class='image_view'>
+      <image src='{{product.image}}' class='image'></image>
+    </view>
+    <view class='text_view'>
+      <view class='title_view'>
+        <text class='title'>{{product.name}}</text>
+      </view>
+      <view class='month_view'>
+        <text class='nonth_detail'>月售 77</text>
+      </view>
+      <view class='price_view'>
+        <!-- <view class=''></view> -->
+        <text class='price'>￥{{product.price}}</text>
+        <view class='add_button' id='{{product.id}}' bindtap='addIntoCarts'>
+          +   加入购物车
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='middle'>
+    <!-- <text></text> -->
+    <view class='middle_title_view'>
+      <text class='middle_title'>商品描述</text>
+    </view>
+    <view class='desrci_view'>
+      {{product.description}}
+    </view>
+  </view>
+  <view class='bottom'>
+    <view class='bottom_title_view'>
+    <text class='title'>商品评价</text>
+    <text class='judge'>(好评度 100%)</text>
+    <!-- <text class='judge_red'>100%）</text> -->
+    </view>
+    <view class='bottom_detail_view'>
+      <view class='detail_image_view'>
+        <image class='head_photo' src='https://pbwu4o9j9.bkt.clouddn.com/touxiang.jpg'></image>
+      </view>
+      <view class='detail_judge_view'>
+        <text class='head_title'>哆啦A梦</text>
+        <view class='zan_view'>
+          <image class='icon_image' src='https://pbwu4o9j9.bkt.clouddn.com/dian.png'></image>
+          <text class='zan_text'> 赞了该商品</text>
+        </view>
+        <text class='detail_judge'>超级好吃哟</text>
+      </view>
+    </view>
+  </view>
+  <view class='footer'>
+     <view class='footer_bottom'>
+      <view class='footer_right'>
+        <view bindtap='clickShoppingCar' class='footer_car_view' data-src='"{{totalMoney>0?car_image:default_car_image}}"'>
+          <image src="{{totalMoney>0?car_image:default_car_image}}" class='footer_car'></image>
+        </view>
+        <view class='right_text_view'>
+          <text class="{{totalMoney>0?'summary_price':'none'}}">￥{{totalMoney}}</text>
+          <text class='takeout_price'>令需{{takeout_price}}元配送费</text>
+        </view>
+      </view>
+      <view class="{{displayStyle==3?'left_yelllow':'left'}}" bindtap='toBuy'>
+        <text class="{{displayStyle==1?'left_text':'none'}}">{{sendUpLimit}}元起送</text>
+        <text class="{{displayStyle==2?'left_text':'none'}}">还差{{spreadLimit}}元</text>
+        <text class="{{displayStyle==3?'left_text':'none'}}">去结算</text>
+      </view>
+    </view>
+  </view>
+  </scroll-view>
 
-
+ 
 </view>

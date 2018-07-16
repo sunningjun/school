@@ -1,24 +1,251 @@
-.container{
+.container {
   width: 100%;
   height: 100%;
 }
-.header{
+
+.header {
   width: 100%;
   height: 40%;
-  background-color: hotpink
+  border-bottom: 1px solid #f5f5f5;
+  /* background-color: hotpink */
 }
-.middle{
+
+.header .image_view {
+  width: 100%;
+  height: 60%;
+  background-color: white;
+}
+
+.image {
+  width: 95%;
+  height: 100%;
+  border-radius: 2px;
+  margin-left: 2%;
+}
+
+.scroll {
+  width: 100%;
+  height: 100%;
+}
+
+.header .text_view {
+  width: 100%;
+  height: 40%;
+}
+
+.title_view {
+  width: 100%;
+  height: 30%;
+  margin-left: 2%;
+}
+
+.title_view .title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.month_view {
+  width: 100%;
+  height: 30%;
+  margin-left: 2%;
+}
+
+.month_view .nonth_detail {
+  font-size: 10px;
+  color: gray;
+}
+
+.price_view {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+.price_view .price {
+  font-size: 14px;
+  color: red;
+}
+
+.add_button {
+  width: 40%;
+  background-color: orange;
+  text-align: center;
+  height: 60%;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.middle {
   width: 100%;
   height: 20%;
-  background-color: bisque
+  border-bottom: 1px solid #f5f5f5;
 }
-.borrom{
+
+.middle .middle_title_view {
+  width: 100%;
+  height: 30%;
+}
+
+.middle .middle_title_view .middle_title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 2%;
+}
+
+.middle .desrci_view {
+  width: 100%;
+  height: 70%;
+  margin-left: 2%;
+  font-size: 12px;
+}
+
+.bottom {
   width: 100%;
   height: 40%;
-  background-color: rebeccapurple
 }
-.footer{
+
+.bottom_title_view {
+  width: 100%;
+  height: 20%;
+  margin-left: 2%;
+}
+
+.bottom_title_view .title {
+  width: 30%;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.bottom_title_view .judge {
+  width: 70%;
+  color: red;
+  font-size: 10px;
+  margin-left: 10%;
+}
+
+.bottom_detail_view {
+  width: 100%;
+  height: 80%;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: row;
+}
+
+.detail_image_view {
+  width: 25%;
+  height: 100%;
+}
+
+.detail_judge_view {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.zan_view {
+  display: flex;
+}
+
+.footer {
   width: 100%;
   height: 10%;
-  background-color: rebeccapurple
+  position: fixed;
+  bottom: 0;
+  background-color: #4d4648;
+}
+
+.head_photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+}
+
+.icon_image {
+  width: 15px;
+  height: 15px;
+}
+
+.zan_text {
+  font-size: 8px;
+  color: gainsboro;
+}
+
+.head_title {
+  font-size: 12px;
+}
+
+.detail_judge {
+  font-size: 12px;
+}
+
+.footer_bottom {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.footer_right {
+  width: 70%;
+  display: flex;
+}
+
+.footer_car_view {
+  margin-top: -5%;
+  margin-left: 5%;
+  margin-right: 2%;
+}
+
+.footer_car {
+  width: 30px;
+  height: 30px;
+}
+
+.right_text_view {
+  display: flex;
+  flex-direction: column;
+}
+
+.takeout_price {
+  color: #8a8a8a;
+  font-size: 12px;
+  position: relative;
+  top: 10%;
+}
+
+.left_yelllow {
+  width: 30%;
+  background-color: #f4e911;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+.left_text {
+  position: relative;
+  top: 25%;
+}
+.summary_price {
+  color: white;
+  font-size: 16px;
+}
+
+.none {
+  display: none;
+}
+
+.left {
+  width: 30%;
+  background-color: #373334;
+  color: #bfbfbf;
+  text-align: center;
 }

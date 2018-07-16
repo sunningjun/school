@@ -22,7 +22,7 @@
     <view class='product_detail'>
       <scroll-view scroll-y='true' class='scroll_product'>
         <view class='image_view' wx:for="{{productList}}">
-          <view class='detail_image_view' bindtap='cascadeToggle' id='{{item.id}}'>
+          <view class='detail_image_view' bindtap='turnToDetail' id='{{item.id}}'>
             <image src='{{item.image}}' class='detail_image'></image>
           </view>
           <view class='text_view'>

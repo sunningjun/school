@@ -1,0 +1,76 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+}
+
+.content {
+  width: 100%;
+  height: 40%;
+  background-color: white;
+  position: relative;
+  top: 2%;
+}
+
+.content_summit_button {
+  width: 90%;
+  color: red;
+  font-size: 14px;
+  border: 1px solid red;
+}
+
+.footer {
+  width: 100%;
+  height: 30%;
+  position: fixed;
+  bottom: 0;
+}
+
+.content_summit {
+  width: 100%;
+  height: 10%;
+  position: relative;
+  top: 40%;
+}
+
+.content_column {
+  width: 100%;
+  height: 25%;
+  border-top: 1px solid #e6e6e6;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+}
+
+.title {
+  width: 20%;
+  position: relative;
+  top: 25%;
+}
+
+.detail {
+  width: 80%;
+  position: relative;
+  top: 25%;
+}
+
+.detail_add {
+  width: 80%;
+  position: relative;
+  top: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.map_image {
+  width: 20px;
+  height: 20px;
+}
+
+.detail_add .select{
+ width: 80%;
+}
+.detail_add .map{
+ width: 20%;
+}
