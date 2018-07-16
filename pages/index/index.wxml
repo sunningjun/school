@@ -12,7 +12,7 @@
     <view class='navigator'>
       <view class="weui-grids">
         <view class="weui-grid" wx:for="{{menu}}" wx:key="name">
-          <navigator url="{{item.url+'?name='+item.name+'&code='+item.code}}">
+          <navigator url="{{item.url}}">
             <view class='weui-grid__bg'>
               <view class="weui-grid__icon" style='background-color:{{item.backgroudcolour}}'>
                 <image src=" {{item.images}}" mode="scaleToFill" />
@@ -40,6 +40,180 @@
       </view>
 
       <view class='news_button'>｜更多</view>
+    </view>
+
+    <view class='miaosha'>
+      <view class='miaosha_first'>
+        <view class='top'>
+          <text class='miaosha_title'>校园秒杀</text>
+        </view>
+        <view class='bottom'>
+          <view class='content'>
+            <image src='{{miaosha[0].images}}' class='miaoshao_image'></image>
+            <text class='new_price'>{{miaosha[0].newPrice}}</text>
+            <text class='old_price'>{{miaosha[0].oldPrice}}</text>
+          </view>
+          <view class='content'>
+            <image src='{{miaosha[1].images}}' class='miaoshao_image'></image>
+            <text class='new_price'>{{miaosha[1].newPrice}}</text>
+            <text class='old_price'>{{miaosha[1].oldPrice}}</text>
+          </view>
+          <view class='content'>
+            <image src='{{miaosha[2].images}}' class='miaoshao_image'></image>
+            <text class='new_price'>{{miaosha[2].newPrice}}</text>
+            <text class='old_price'>{{miaosha[2].oldPrice}}</text>
+          </view>
+        </view>
+      </view>
+
+      <view class='miaosha_first'>
+        <view class='top'>
+          <text class='miaosha_title eat'>吃饭时间到</text>
+        </view>
+        <view class='bottom'>
+          <view class='item'>
+            <image src='https://pbwu4o9j9.bkt.clouddn.com/meat.jpg' class='miaoshao_image'></image>
+            <text class='title'>我呀便当</text>
+            <view class='desription'>
+              <text class='text'>人气餐厅</text>
+              <image class='miaosha_icon' src='https://pbwu4o9j9.bkt.clouddn.com/dian.png'></image>
+            </view>
+          </view>
+
+          <view class='item'>
+            <image src='https://pbwu4o9j9.bkt.clouddn.com/liangpi.jpg' class='miaoshao_image'></image>
+            <text class='title'>魏家凉皮</text>
+            <view class='desription'>
+              <text class='text'>附近的餐厅</text>
+              <!-- <image class='miaosha_icon' src='https://pbwu4o9j9.bkt.clouddn.com/dian.png'></image> -->
+            </view>
+          </view>
+        </view>
+
+      </view>
+      <view class='miaosha_first'>
+        <view class='big_top'>
+          <text class='miaosha_title find'>发现好货</text>
+          <text class='small'>高品质生活</text>
+        </view>
+        <view class='findview'>
+          <image src='https://pbwu4o9j9.bkt.clouddn.com/close.jpg' class='miaoshao_image bigImgae'></image>
+          <image src='https://pbwu4o9j9.bkt.clouddn.com/rice.jpg' class='miaoshao_image bigImgae'></image>
+        </view>
+      </view>
+      <view class='miaosha_first'>
+        <view class='big_top'>
+          <text class='miaosha_title job'>兼职工作</text>
+          <text class='small'>高薪职位任你挑</text>
+        </view>
+        <view class='findview'>
+          <image src='https://pbwu4o9j9.bkt.clouddn.com/jian1.jpg' class='miaoshao_image bigImgae'></image>
+          <image src='https://pbwu4o9j9.bkt.clouddn.com/jian2.jpg' class='miaoshao_image bigImgae'></image>
+        </view>
+      </view>
+    </view>
+
+    <view class='tuijian'>
+      <view class='title'>
+        <view class='title_image_view firstImage'>
+          <image class='title_icon' src='https://pbwu4o9j9.bkt.clouddn.com/flower.png'></image>
+        </view>
+        <view class='content'>
+          <text class='text'>二手好物</text>
+        </view>
+        <view class='title_image_view'>
+          <image class='title_icon' src='https://pbwu4o9j9.bkt.clouddn.com/flower.png'></image>
+        </view>
+      </view>
+
+      <view class='middle'>
+        <scroll-view scroll-x="true" class="TScrollView1">
+          <view class="TViewRow1" wx:for="{{used}}">
+            <view class='sub_view_t'>
+              <view class='sub_image_view'>
+                <image src='{{item.images}}' class='sub_view_image'></image>
+              </view>
+              <view class='sub_text_view'>
+                <text class='sub_text_view_title'>{{item.title}}</text>
+                <text class='sub_text_view_price'>{{item.price}}</text>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+
+    <view class='tuijian'>
+      <view class='title'>
+        <view class='title_image_view firstImage'>
+          <image class='title_icon' src='https://pbwu4o9j9.bkt.clouddn.com/hua.png'></image>
+        </view>
+        <view class='content'>
+          <text class='peixun'>培训考级</text>
+        </view>
+        <view class='title_image_view'>
+          <image class='title_icon' src='https://pbwu4o9j9.bkt.clouddn.com/hua.png'></image>
+        </view>
+      </view>
+
+      <view class='middle'>
+        <scroll-view scroll-x="true" class="TScrollView1">
+          <view class="TViewRow1" wx:for="{{train}}">
+            <view class='sub_view_t'>
+              <view class='sub_image_view'>
+                <image src='{{item.images}}' class='sub_view_image'></image>
+              </view>
+              <view class='sub_text_view'>
+                <text class='tarin_title'>{{item.title}}</text>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+
+    <view class='tuijian referrer'>
+      <view class='title'>
+        <view class='title_image_view firstImage'>
+          <image class='title_icon' src='https://pbwu4o9j9.bkt.clouddn.com/hua2.png'></image>
+        </view>
+        <view class='content'>
+          <text class='referrer_text'>为你推荐</text>
+        </view>
+        <view class='title_image_view'>
+          <image class='title_icon' src='https://pbwu4o9j9.bkt.clouddn.com/hua2.png'></image>
+        </view>
+      </view>
+
+      <view class='middle'>
+        <view class='sub_item'>
+          <image src='https://pbwu4o9j9.bkt.clouddn.com/weiyi.jpg' class='sub_item_images'></image>
+          <view class='title'>
+            <text class='title_text'>春秋简单连帽男士卫衣</text>
+          </view>
+          <view class='desrc'>
+            <text class='middle_price_text'>￥49</text>
+            <text class='middle_month_text'>月售 2900</text>
+            <view class='middle_more_view'>
+              <image src='https://pbwu4o9j9.bkt.clouddn.com/moredian.png' class='middle_more'></image>
+            </view>
+          </view>
+        </view>
+
+        <view class='sub_item'>
+          <image src='https://pbwu4o9j9.bkt.clouddn.com/deng.jpg' class='sub_item_images'></image>
+          <view class='title'>
+            <text class='title_text'>满天星串灯小彩灯</text>
+          </view>
+          <view class='desrc'>
+            <text class='middle_price_text'>￥25</text>
+            <text class='middle_month_text'>月售 39</text>
+            <view class='middle_more_view'>
+              <image src='https://pbwu4o9j9.bkt.clouddn.com/moredian.png' class='middle_more'></image>
+            </view>
+          </view>
+        </view>
+      </view>
     </view>
   </scroll-view>
 

@@ -1,12 +1,56 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/meal/detail/detail",
+    "pages/index/index",
+    "pages/meal/meal",
+    "pages/order/order",
+    "pages/shoppingcar/shoppingcar",
+    "pages/userinfo/userinfo",
     "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTitleText": "智慧校园",
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "images/icon/index.png",
+        "selectedIconPath": "images/icon/index.png",
+        "selectedColor": "#000000"
+      },
+      {
+        "pagePath": "pages/shoppingcar/shoppingcar",
+        "text": "同学圈",
+        "iconPath": "images/icon/shopping.png",
+        "selectedIconPath": "images/icon/shopping.png",
+        "selectedColor": "#000000"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "发布",
+        "iconPath": "images/icon/fabu.png",
+        "selectedIconPath": "images/icon/order.png",
+        "selectedColor": "#000000"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单",
+        "iconPath": "images/icon/order.png",
+        "selectedIconPath": "images/icon/order.png",
+        "selectedColor": "#80FF80"
+      },
+      {
+        "pagePath": "pages/userinfo/userinfo",
+        "text": "我的",
+        "iconPath": "images/icon/user.png",
+        "selectedIconPath": "images/icon/user.png"
+      }
+    ]
   }
 }

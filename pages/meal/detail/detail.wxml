@@ -1,0 +1,8 @@
+<view class='container'>
+  <view class='header'></view>
+  <view class='middle'></view>
+  <view class='bottom'></view>
+    <view class='footer'></view>
+
+
+</view>

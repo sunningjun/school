@@ -7,6 +7,7 @@
 .scroll {
   width: 100%;
   height: 100%;
+  /* margin-bottom: 20%; */
 }
 
 .top_view {
@@ -43,7 +44,6 @@
   height: 33%;
   display: flex;
   flex-direction: column;
-  background-color: beige;
 }
 
 .WViewRow1 {
@@ -91,8 +91,8 @@
   top: 0;
   right: 0;
   height: 1px;
-  border-top: 1px solid #d9d9d9;
-  color: #d9d9d9;
+  border-top: 1px solid #f4f4f4;
+  color: #f4f4f4;
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
   -webkit-transform: scaleY(0.5);
@@ -106,12 +106,18 @@
   top: 0;
   width: 1px;
   bottom: 0;
-  border-left: 1px solid #d9d9d9;
-  color: #d9d9d9;
+  border-left: 1px solid #f4f4f4;
+  color: #f4f4f4;
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
   -webkit-transform: scaleX(0.5);
   transform: scaleX(0.5);
+}
+
+.middle_sub_view {
+  width: 100%;
+  height: 100%;
+  border-right: #f4f4f4;
 }
 
 .weui-grid {
@@ -129,8 +135,8 @@
   top: 0;
   width: 1px;
   bottom: 0;
-  border-right: 1px solid #d9d9d9;
-  color: #d9d9d9;
+  border-right: 1px solid #f4f4f4;
+  color: #f4f4f4;
   -webkit-transform-origin: 100% 0;
   transform-origin: 100% 0;
   -webkit-transform: scaleX(0.5);
@@ -144,8 +150,8 @@
   bottom: 0;
   right: 0;
   height: 1px;
-  border-bottom: 1px solid #d9d9d9;
-  color: #d9d9d9;
+  border-bottom: 1px solid #f4f4f4;
+  color: #f4f4f4;
   -webkit-transform-origin: 0 100%;
   transform-origin: 0 100%;
   -webkit-transform: scaleY(0.5);
@@ -205,16 +211,16 @@
   height: 100%;
   margin-left: 2%;
   margin-top: 5%;
-  font-weight: bold
+  font-weight: bold;
 }
-.swipper_view_text{
+
+.swipper_view_text {
   width: 100%;
   /* height: 100%; */
   margin-top: 10%;
   font-size: 12px;
-  height: 70rpx
+  height: 70rpx;
 }
-
 
 .news_content {
   width: 60%;
@@ -235,7 +241,7 @@
   height: 100%;
   margin-top: 5%;
   font-weight: bold;
-  text-align: center
+  text-align: center;
   /* border-left: 1px solid */
 }
 
@@ -243,4 +249,318 @@
   margin-left: 2%;
   background-color: red;
 }
-/* .sroll_text{} */
+
+.miaosha {
+  width: 100%;
+  height: 40%;
+  background-color: white;
+  margin-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.miaosha_first {
+  width: 49%;
+  height: 50%;
+  border-left: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.miaosha_first .top {
+  width: 100%;
+  height: 20%;
+}
+
+.big_top {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.miaosha_first .bottom {
+  width: 100%;
+  height: 80%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+}
+
+.findview {
+  width: 100%;
+  height: 60%;
+  display: flex;
+}
+
+.miaosha_first .bottom .content {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  /* height: 100%; */
+}
+
+.miaosha_first .bottom .item {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  margin-left: 10%;
+}
+
+.miaosha_first .bottom .item .title {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.miaosha_icon {
+  width: 15px;
+  height: 15px;
+}
+
+.desription {
+  display: flex;
+}
+
+.desription .text {
+  font-size: 10px;
+  color: gray;
+}
+
+.new_price {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.old_price {
+  font-size: 10px;
+  color: gray;
+  text-decoration: line-through;
+  text-align: center;
+}
+
+.miaosha_title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 2%;
+}
+
+.eat {
+  color: #8080ff;
+}
+
+.miaoshao_image {
+  width: 50px;
+  height: 50px;
+}
+
+.find {
+  color: #ff8080;
+}
+
+.small {
+  font-size: 10px;
+  /* margin-left: 10%; */
+  position: relative;
+  left: 2%;
+  top: 0;
+}
+
+.bigImgae {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 60px;
+  height: 60px;
+}
+
+.job {
+  color: #ff8040;
+}
+
+.tuijian {
+  width: 100%;
+  height: 35%;
+  /* background-color: white; */
+}
+
+.tuijian .title {
+  width: 100%;
+  height: 25%;
+  /* background-color: whitesmoke; */
+  display: flex;
+  position: relative;
+  top: 5%;
+}
+
+.tuijian .middle {
+  width: 100%;
+  height: 75%;
+}
+
+.tuijian .title .content {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+
+.tuijian .title .text {
+  font-size: 16px;
+  color: #8080ff;
+}
+
+.title_icon {
+  width: 20px;
+  height: 20px;
+}
+
+.title_image_view {
+  width: 20%;
+  height: 100%;
+  /* background-color: hotpink */
+}
+
+.firstImage {
+  position: relative;
+  left: 20%;
+}
+
+.WScrollView1 {
+  box-sizing: border-box;
+  white-space: nowrap;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.TScrollView1 {
+  box-sizing: border-box;
+  white-space: nowrap;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.TViewRow1 {
+  box-sizing: border-box;
+  display: inline-block;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 30%;
+  height: 100%;
+  margin-right: 10px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.sub_text_view {
+  width: 100%;
+  height: 40%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub_view_image {
+  width: 50px;
+  height: 50px;
+  margin-left: 20%;
+  margin-top: 20%;
+}
+
+.sub_text_view_title {
+  font-size: 12px;
+}
+
+.sub_text_view_price {
+  font-size: 12px;
+  color: red;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.WViewRow1 {
+  width: 30%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.peixun {
+  color: #ff8040;
+  font-size: 16px;
+}
+
+.referrer_text {
+  color: #ff8080;
+  font-size: 16px;
+}
+
+.tarin_title {
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 8%;
+}
+
+.referrer {
+  width: 100%;
+  height: 60%;
+}
+
+.referrer .title {
+  position: relative;
+  top: 0;
+  height: 10%;
+}
+
+.referrer .middle {
+  height: 90%;
+  display: flex;
+}
+
+.sub_item {
+  width: 40%;
+  height: 150px;
+  background-color: white;
+  margin-left: 5%;
+}
+
+.sub_item_images {
+  width: 100%;
+  height: 100px;
+}
+
+.title_text {
+  font-size: 12px;
+}
+
+.middle_price_text {
+  font-size: 12px;
+  color: red;
+  margin-top: 10%;
+}
+
+.middle_month_text {
+  font-size: 10px;
+  color: #707070;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+
+.middle_more {
+  width: 20px;
+  height: 20px;
+
+}
+.middle_more_view{
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.desrc {
+  display: flex;
+}
