@@ -72,20 +72,20 @@
         </view>
         <view class='bottom'>
           <view class='item'>
-            <image src='https://pbwu4o9j9.bkt.clouddn.com/meat.jpg' class='miaoshao_image'></image>
+            <image src='http://pbwu4o9j9.bkt.clouddn.com/meat.jpg' class='miaoshao_image'></image>
             <text class='title'>我呀便当</text>
             <view class='desription'>
               <text class='text'>人气餐厅</text>
-              <image class='miaosha_icon' src='https://pbwu4o9j9.bkt.clouddn.com/dian.png'></image>
+              <image class='miaosha_icon' src='http://pbwu4o9j9.bkt.clouddn.com/dian.png'></image>
             </view>
           </view>
 
           <view class='item'>
-            <image src='https://pbwu4o9j9.bkt.clouddn.com/liangpi.jpg' class='miaoshao_image'></image>
+            <image src='http://pbwu4o9j9.bkt.clouddn.com/liangpi.jpg' class='miaoshao_image'></image>
             <text class='title'>魏家凉皮</text>
             <view class='desription'>
               <text class='text'>附近的餐厅</text>
-              <!-- <image class='miaosha_icon' src='https://pbwu4o9j9.bkt.clouddn.com/dian.png'></image> -->
+              <!-- <image class='miaosha_icon' src='http://pbwu4o9j9.bkt.clouddn.com/dian.png'></image> -->
             </view>
           </view>
         </view>
@@ -97,8 +97,8 @@
           <text class='small'>高品质生活</text>
         </view>
         <view class='findview'>
-          <image src='https://pbwu4o9j9.bkt.clouddn.com/close.jpg' class='miaoshao_image bigImgae'></image>
-          <image src='https://pbwu4o9j9.bkt.clouddn.com/rice.jpg' class='miaoshao_image bigImgae'></image>
+          <image src='http://pbwu4o9j9.bkt.clouddn.com/close.jpg' class='miaoshao_image bigImgae'></image>
+          <image src='http://pbwu4o9j9.bkt.clouddn.com/rice.jpg' class='miaoshao_image bigImgae'></image>
         </view>
       </view>
       <view class='miaosha_first'>
@@ -107,8 +107,8 @@
           <text class='small'>高薪职位任你挑</text>
         </view>
         <view class='findview'>
-          <image src='https://pbwu4o9j9.bkt.clouddn.com/jian1.jpg' class='miaoshao_image bigImgae'></image>
-          <image src='https://pbwu4o9j9.bkt.clouddn.com/jian2.jpg' class='miaoshao_image bigImgae'></image>
+          <image src='http://pbwu4o9j9.bkt.clouddn.com/jian1.jpg' class='miaoshao_image bigImgae'></image>
+          <image src='http://pbwu4o9j9.bkt.clouddn.com/jian2.jpg' class='miaoshao_image bigImgae'></image>
         </view>
       </view>
     </view>
@@ -116,13 +116,13 @@
     <view class='tuijian'>
       <view class='title'>
         <view class='title_image_view firstImage'>
-          <image class='title_icon' src='https://pbwu4o9j9.bkt.clouddn.com/flower.png'></image>
+          <image class='title_icon' src='http://pbwu4o9j9.bkt.clouddn.com/flower.png'></image>
         </view>
         <view class='content'>
           <text class='text'>二手好物</text>
         </view>
         <view class='title_image_view'>
-          <image class='title_icon' src='https://pbwu4o9j9.bkt.clouddn.com/flower.png'></image>
+          <image class='title_icon' src='http://pbwu4o9j9.bkt.clouddn.com/flower.png'></image>
         </view>
       </view>
 
@@ -146,13 +146,13 @@
     <view class='tuijian'>
       <view class='title'>
         <view class='title_image_view firstImage'>
-          <image class='title_icon' src='https://pbwu4o9j9.bkt.clouddn.com/hua.png'></image>
+          <image class='title_icon' src='http://pbwu4o9j9.bkt.clouddn.com/hua.png'></image>
         </view>
         <view class='content'>
           <text class='peixun'>培训考级</text>
         </view>
         <view class='title_image_view'>
-          <image class='title_icon' src='https://pbwu4o9j9.bkt.clouddn.com/hua.png'></image>
+          <image class='title_icon' src='http://pbwu4o9j9.bkt.clouddn.com/hua.png'></image>
         </view>
       </view>
 
@@ -175,19 +175,19 @@
     <view class='tuijian referrer'>
       <view class='title'>
         <view class='title_image_view firstImage'>
-          <image class='title_icon' src='https://pbwu4o9j9.bkt.clouddn.com/hua2.png'></image>
+          <image class='title_icon' src='http://pbwu4o9j9.bkt.clouddn.com/hua2.png'></image>
         </view>
         <view class='content'>
           <text class='referrer_text'>为你推荐</text>
         </view>
         <view class='title_image_view'>
-          <image class='title_icon' src='https://pbwu4o9j9.bkt.clouddn.com/hua2.png'></image>
+          <image class='title_icon' src='http://pbwu4o9j9.bkt.clouddn.com/hua2.png'></image>
         </view>
       </view>
 
       <view class='middle'>
         <view class='sub_item'>
-          <image src='https://pbwu4o9j9.bkt.clouddn.com/weiyi.jpg' class='sub_item_images'></image>
+          <image src='http://pbwu4o9j9.bkt.clouddn.com/weiyi.jpg' class='sub_item_images'></image>
           <view class='title'>
             <text class='title_text'>春秋简单连帽男士卫衣</text>
           </view>
@@ -195,13 +195,13 @@
             <text class='middle_price_text'>￥49</text>
             <text class='middle_month_text'>月售 2900</text>
             <view class='middle_more_view'>
-              <image src='https://pbwu4o9j9.bkt.clouddn.com/moredian.png' class='middle_more'></image>
+              <image src='http://pbwu4o9j9.bkt.clouddn.com/moredian.png' class='middle_more'></image>
             </view>
           </view>
         </view>
 
         <view class='sub_item'>
-          <image src='https://pbwu4o9j9.bkt.clouddn.com/deng.jpg' class='sub_item_images'></image>
+          <image src='http://pbwu4o9j9.bkt.clouddn.com/deng.jpg' class='sub_item_images'></image>
           <view class='title'>
             <text class='title_text'>满天星串灯小彩灯</text>
           </view>
@@ -209,7 +209,7 @@
             <text class='middle_price_text'>￥25</text>
             <text class='middle_month_text'>月售 39</text>
             <view class='middle_more_view'>
-              <image src='https://pbwu4o9j9.bkt.clouddn.com/moredian.png' class='middle_more'></image>
+              <image src='http://pbwu4o9j9.bkt.clouddn.com/moredian.png' class='middle_more'></image>
             </view>
           </view>
         </view>

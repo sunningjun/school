@@ -1,8 +1,10 @@
 {
   "pages": [
+    "pages/index/index",
+    "pages/brand/brand",
+    "pages/brand/detail/detail",
     "pages/meal/meal",
     "pages/meal/detail/detail",
-    "pages/index/index",
     "pages/order/order",
     "pages/shoppingcar/shoppingcar",
     "pages/userinfo/userinfo",

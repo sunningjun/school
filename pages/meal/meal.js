@@ -13,8 +13,8 @@ Page({
     carts: [],
     totalMoney: 0,
     takeout_price: 10,
-    car_image: "https://pbwu4o9j9.bkt.clouddn.com/full_car.png",
-    default_car_image: "https://pbwu4o9j9.bkt.clouddn.com/footer_car.png",
+    car_image: "http://pbwu4o9j9.bkt.clouddn.com/full_car.png",
+    default_car_image: "http://pbwu4o9j9.bkt.clouddn.com/footer_car.png",
     top_height: '10%',
     showAni: false,
     sendUpLimit: 0,
@@ -25,9 +25,9 @@ Page({
     pro: null,
     id: null,
     imgUrls: [
-      'https://pbwu4o9j9.bkt.clouddn.com/wucan1.jpg',
-      'https://pbwu4o9j9.bkt.clouddn.com/wucan2.jpg',
-      'https://pbwu4o9j9.bkt.clouddn.com/wucan3.jpg'
+      'http://pbwu4o9j9.bkt.clouddn.com/wucan1.jpg',
+      'http://pbwu4o9j9.bkt.clouddn.com/wucan2.jpg',
+      'http://pbwu4o9j9.bkt.clouddn.com/wucan3.jpg'
     ],
     indicatordots: true,
     autoplay: true,
@@ -53,7 +53,7 @@ Page({
       "id": 1,
       "name": "牛肉汉堡",
       "price": "40",
-      "image": "https://pbwu4o9j9.bkt.clouddn.com/ham1.jpg",
+      "image": "http://pbwu4o9j9.bkt.clouddn.com/ham1.jpg",
       "category": "meat",
       "description": "牛肉汉堡"
     },
@@ -61,7 +61,7 @@ Page({
       "id": 2,
       "name": "鸡肉汉堡",
       "price": "25",
-      "image": "https://pbwu4o9j9.bkt.clouddn.com/him2.jpg",
+      "image": "http://pbwu4o9j9.bkt.clouddn.com/him2.jpg",
       "category": "meat",
       "description": "1"
     },
@@ -69,7 +69,7 @@ Page({
       "id": 3,
       "name": "培根汉堡",
       "price": "45",
-      "image": "https://pbwu4o9j9.bkt.clouddn.com/him3.jpg",
+      "image": "http://pbwu4o9j9.bkt.clouddn.com/him3.jpg",
       "category": "meat",
       "description": "2"
     },
@@ -77,7 +77,7 @@ Page({
       "id": 4,
       "name": "烤串",
       "price": "90",
-      "image": "https://pbwu4o9j9.bkt.clouddn.com/meat1.jpg",
+      "image": "http://pbwu4o9j9.bkt.clouddn.com/meat1.jpg",
       "category": "meat",
       "description": "3"
     },
@@ -85,7 +85,7 @@ Page({
       "id": 5,
       "name": "牛排",
       "price": "108",
-      "image": "https://pbwu4o9j9.bkt.clouddn.com/meat3.jpg",
+      "image": "http://pbwu4o9j9.bkt.clouddn.com/meat3.jpg",
       "category": "meat",
       "description": "4"
     }],
@@ -93,7 +93,7 @@ Page({
       "id": 6,
       "name": "龙虾",
       "price": "600",
-      "image": "https://pbwu4o9j9.bkt.clouddn.com/seafood1.jpg",
+      "image": "http://pbwu4o9j9.bkt.clouddn.com/seafood1.jpg",
       "category": "seafood",
       "description": "5"
     },
@@ -101,7 +101,7 @@ Page({
       "id": 7,
       "name": "蒜蓉粉丝蒸扇贝",
       "price": "188",
-      "image": "https://pbwu4o9j9.bkt.clouddn.com/seafood2.jpg",
+      "image": "http://pbwu4o9j9.bkt.clouddn.com/seafood2.jpg",
       "category": "seafood",
       "description": "5"
     },
@@ -109,7 +109,7 @@ Page({
       "id": 8,
       "name": "海鲜汤锅",
       "price": "1500",
-      "image": "https://pbwu4o9j9.bkt.clouddn.com/seafood3.jpg",
+      "image": "http://pbwu4o9j9.bkt.clouddn.com/seafood3.jpg",
       "category": "seafood",
       "description": "6"
     },
@@ -117,7 +117,7 @@ Page({
       "id": 9,
       "name": "海鲜蒸锅",
       "price": "2090",
-      "image": "https://pbwu4o9j9.bkt.clouddn.com/seafood4.jpg",
+      "image": "http://pbwu4o9j9.bkt.clouddn.com/seafood4.jpg",
       "category": "seafood",
       "description": "5"
     }],
@@ -125,7 +125,7 @@ Page({
       "id": 10,
       "name": "蓝莓奶昔",
       "price": "25",
-      "image": "https://pbwu4o9j9.bkt.clouddn.com/milk1.jpg",
+      "image": "http://pbwu4o9j9.bkt.clouddn.com/milk1.jpg",
       "category": "milk",
       "description": "5"
     },
@@ -133,7 +133,7 @@ Page({
       "id": 11,
       "name": "草莓奶昔",
       "price": "25",
-      "image": "https://pbwu4o9j9.bkt.clouddn.com/milk2.jpg",
+      "image": "http://pbwu4o9j9.bkt.clouddn.com/milk2.jpg",
       "category": "milk",
       "description": "5"
     },
@@ -141,7 +141,7 @@ Page({
       "id": 12,
       "name": "雪顶咖啡",
       "price": "35",
-      "image": "https://pbwu4o9j9.bkt.clouddn.com/milk3.jpg",
+      "image": "http://pbwu4o9j9.bkt.clouddn.com/milk3.jpg",
       "category": "milk",
       "description": "5"
     },
@@ -149,7 +149,7 @@ Page({
       "id": 13,
       "name": "芒果西米露",
       "price": "45",
-      "image": "https://pbwu4o9j9.bkt.clouddn.com/milk4.jpg",
+      "image": "http://pbwu4o9j9.bkt.clouddn.com/milk4.jpg",
       "category": "milk",
       "description": "5"
     }]

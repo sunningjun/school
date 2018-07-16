@@ -33,13 +33,13 @@
             </view>
             <view class='plus_view'>
               <view class="{{map[item.id]>0?'minus_view':'none'}}" data-id="{{item.id}}" bindtap='clickMinus'>
-                <image src='https://pbwu4o9j9.bkt.clouddn.com/minus.png' class='plus'></image>
+                <image src='http://pbwu4o9j9.bkt.clouddn.com/minus.png' class='plus'></image>
               </view>
               <view class='plus_view_text' id='{{item.id}}'>
                 <text class='num_text'>{{map[item.id]}}</text>
               </view>
               <view class='plus_view_detail' bindtap='addIntoCartsWhenClickPlus' id='{{item.id}}'>
-                <image src='https://pbwu4o9j9.bkt.clouddn.com/plus.png' class='plus'></image>
+                <image src='http://pbwu4o9j9.bkt.clouddn.com/plus.png' class='plus'></image>
               </view>
             </view>
           </view>
@@ -54,7 +54,7 @@
     <view class="{{showAni?'ani_car':'ani_car_none'}}" animation="{{animationData}}">
       <view class='header'>
         <view class='header_clear_all' bindtap='clearAllCars'>
-          <image src='https://pbwu4o9j9.bkt.clouddn.com/clearAll.png' class='clear_all_image'></image>
+          <image src='http://pbwu4o9j9.bkt.clouddn.com/clearAll.png' class='clear_all_image'></image>
           <text class='clear_all_text'>清空购物车</text>
         </view>
       </view>
@@ -65,13 +65,13 @@
             <view class='ani_scroll_price'>￥{{item.price}}</view>
             <view class='ani_scroll_num'>
               <view class='ani_sku_minu' data-id="{{item.id}}" bindtap='clickMinus'>
-                <image src='https://pbwu4o9j9.bkt.clouddn.com/min.png' class='sku_num_image'></image>
+                <image src='http://pbwu4o9j9.bkt.clouddn.com/min.png' class='sku_num_image'></image>
               </view>
               <view class='ani_sku_number'>
                 <text data-index="{{index}}" data-id="{{index}}">{{item.num}}</text>
               </view>
               <view class='ani_sku_plus' bindtap="clickPlus" data-id="{{index}}">
-                <image src='https://pbwu4o9j9.bkt.clouddn.com/plus.png' class='sku_num_image'></image>
+                <image src='http://pbwu4o9j9.bkt.clouddn.com/plus.png' class='sku_num_image'></image>
               </view>
             </view>
           </view>
@@ -129,7 +129,7 @@
       </view>
     </view>
     <view class='ani_close' bindtap='cascadeDismiss'>
-      <image src='https://pbwu4o9j9.bkt.clouddn.com/ani_close.png' class='ani_title_close'></image>
+      <image src='http://pbwu4o9j9.bkt.clouddn.com/ani_close.png' class='ani_title_close'></image>
     </view>
   </view>
 </view>

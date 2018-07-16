@@ -37,12 +37,12 @@
     </view>
     <view class='bottom_detail_view'>
       <view class='detail_image_view'>
-        <image class='head_photo' src='https://pbwu4o9j9.bkt.clouddn.com/touxiang.jpg'></image>
+        <image class='head_photo' src='http://pbwu4o9j9.bkt.clouddn.com/touxiang.jpg'></image>
       </view>
       <view class='detail_judge_view'>
         <text class='head_title'>哆啦A梦</text>
         <view class='zan_view'>
-          <image class='icon_image' src='https://pbwu4o9j9.bkt.clouddn.com/dian.png'></image>
+          <image class='icon_image' src='http://pbwu4o9j9.bkt.clouddn.com/dian.png'></image>
           <text class='zan_text'> 赞了该商品</text>
         </view>
         <text class='detail_judge'>超级好吃哟</text>

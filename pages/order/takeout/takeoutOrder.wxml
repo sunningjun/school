@@ -13,7 +13,7 @@
           </view>
         </view>
         <view class='header_detail_image_view'>
-          <image src='https://pbwu4o9j9.bkt.clouddn.com/moreH.png' class='header_detail_image'></image>
+          <image src='http://pbwu4o9j9.bkt.clouddn.com/moreH.png' class='header_detail_image'></image>
         </view>
       </view>
     </view>
@@ -56,7 +56,7 @@
         <view class='footer_sub_view'>
           <view class='footer_sub_view_text'>
             <text>餐具分数/口味偏好</text>
-            <image src='https://pbwu4o9j9.bkt.clouddn.com/more_black.png' class='header_detail_image'></image>
+            <image src='http://pbwu4o9j9.bkt.clouddn.com/more_black.png' class='header_detail_image'></image>
           </view>
 
         </view>
