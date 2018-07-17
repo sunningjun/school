@@ -1,0 +1,48 @@
+<view class='container'>
+  <view class='category_view'>
+    <view class='category_view_text'>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">
+          {{array[index]}}
+        </view>
+      </picker>
+    </view>
+
+    <view class='category_view_image'>
+      <image class='icon' src='http://pbwu4o9j9.bkt.clouddn.com/gray_more1.png'></image>
+    </view>
+
+  </view>
+  <view class='title_view'>
+    <input class='title_input' placeholder='宝贝标题'></input>
+  </view>
+  <view class='content_view'>
+    <textarea class='title_input' placeholder='宝贝内容'></textarea>
+    <!-- <input class='title_input' placeholder='宝贝标题'></input> -->
+  </view>
+  <view class='image_view'>
+    <view class='upload_image_view' bindtap='uploadImage'>
+      <image src='http://pbwu4o9j9.bkt.clouddn.com/camera.png' class='image'></image>
+    </view>
+  </view>
+  <view class='price_view'>
+    <view class='rmb_view'>
+      <text class='price'>RMB</text>
+    </view>
+    <view class='price_input_view'>
+      <input type='number' class='price_input' placeholder='0.00'></input>
+    </view>
+  </view>
+  <view class='title_view'>
+    <input class='title_input' placeholder='联系电话'></input>
+  </view>
+  <view class='title_view'>
+    <input class='title_input' placeholder='联系地址'></input>
+  </view>
+
+  <view class='footer_view'>
+    <view class='footer_button'>
+      <text>发布</text>
+    </view>
+  </view>
+</view>

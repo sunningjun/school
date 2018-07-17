@@ -1,0 +1,27 @@
+<view class='container'>
+  <view class='nav_view'>
+    <view class='sub_view' wx:for="{{navList}}" bindtap='turnToProduct' data-title='{{item.title}}'>
+      <view class='image_view'>
+        <image src='{{item.image}}' class='nav_image'></image>
+      </view>
+      <view class='text_view'>
+        <text class='text'>{{item.title}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='content_view'>
+    <swiper indicator-dots="{{indicator}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='swipper_view'>
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="leaflet" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class='footer_view' bindtap='publishProduct'>
+    <view class='footer_button'>
+      <image class='button' src='http://pbwu4o9j9.bkt.clouddn.com/publish.png'></image>
+    </view>
+  </view>
+</view>

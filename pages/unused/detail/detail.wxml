@@ -1,0 +1,15 @@
+<view class='container'>
+  <scroll-view class='scroll' scroll-y='true'>
+    <view class='sub_item_view' wx:for="{{proList}}">
+      <view class='image_view'>
+        <image class='image' src='{{item.image}}'></image>
+      </view>
+      <view class='text_view'>
+        <view class='title_view'>
+          <text class='text'>{{item.title}}</text>
+        </view>
+        <view class='price_view'>RMB {{item.price}}元</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

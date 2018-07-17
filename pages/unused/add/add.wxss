@@ -1,0 +1,139 @@
+.container {
+  background-color: #f7f7f7;
+}
+
+.category_view {
+  width: 95%;
+  background-color: white;
+  height: 8%;
+  position: relative;
+  left: 2%;
+  top: 2%;
+  border-radius: 5px;
+  color: #808080;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between
+}
+
+.title_view {
+  width: 95%;
+  background-color: white;
+  height: 8%;
+  position: relative;
+  left: 2%;
+  top: 2%;
+  margin-top: 2%;
+  border-radius: 5px;
+}
+
+.content_view {
+  width: 95%;
+  background-color: white;
+  height: 20%;
+  position: relative;
+  top: 2%;
+  margin-left: 2%;
+  margin-top: 2%;
+  border-radius: 5px;
+}
+.image_view {
+  width: 95%;
+  background-color: white;
+  height: 20%;
+  position: relative;
+  top: 2%;
+  margin-left: 2%;
+  margin-top: 2%;
+  border-radius: 5px;
+}
+
+.title_input {
+  font-size: 12px;
+  margin-left: 2%;
+  position: relative;
+  top: 20%;
+}
+.image{
+  width: 30px;
+  height: 30px;
+  margin-left: 25%;
+  margin-top: 15%;
+}
+.upload_image_view{
+  width: 20%;
+  height: 50%;
+  background-color: #f7f7f7;
+  margin-left: 5%;
+  position: relative;
+  top: 25%;
+  border-radius: 2px;
+}
+.price_view {
+  width: 95%;
+  background-color: white;
+  height: 5%;
+  position: relative;
+  top: 2%;
+  margin-left: 2%;
+  margin-top: 2%;
+  border-radius: 5px;
+  display: flex;
+}
+.price{
+  font-size: 12px;
+  font-weight: bold;
+
+}
+.picker{
+  width: 100%;
+  height: 100%;
+}
+.price_input{
+  color: grey;
+  font-size: 12px;
+  margin-top: 1%;
+
+}
+.rmb_view{
+  width: 15%;
+  height: 100%;
+  text-align: center
+}
+.price_input_view{
+  width: 85%;
+  height: 100%;
+}
+.footer_view{
+  width: 95%;
+  height: 8%;
+  margin-left: 2%;
+  background-color: #FFD845;
+  position: fixed;
+  bottom: 0;
+  border-radius: 5px;
+}
+.footer_button{
+  position: relative;
+  top: 25%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: white
+  
+}
+.icon{
+  width: 15px;
+  height: 15px;
+}
+.category_view_text{
+  width: 80%;
+  height: 100%;
+  margin-left: 2%;
+  margin-top: 3%;
+}
+.category_view_image{
+  width: 20%;
+   margin-top: 3%;
+
+}

@@ -1,6 +1,9 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/index/index",    
+    "pages/unused/unused",
+    "pages/unused/detail/detail",
+    "pages/unused/add/add",
     "pages/brand/brand",
     "pages/brand/search/search",
     "pages/brand/channel/channel",

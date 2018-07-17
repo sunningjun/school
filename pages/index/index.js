@@ -38,8 +38,10 @@ Page({
       {
         "images": "http://pbwu4o9j9.bkt.clouddn.com/xian.png",
         "text": "闲置交易",
-        "backgroudcolour": "#FF8040",
-        "id": "3"
+        "backgroudcolour": "#FFD845",
+        "id": "3",
+        "url": "../unused/unused"
+
       },
       {
         "images": "http://pbwu4o9j9.bkt.clouddn.com/pei.png",
