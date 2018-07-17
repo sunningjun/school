@@ -1,0 +1,184 @@
+.scroll {
+  width: 100%;
+  height: 100%;
+}
+
+.image_view {
+  width: 100%;
+  height: 25%;
+}
+
+.swipper_view {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+}
+
+.search_view {
+  width: 90%;
+  margin-left: 5%;
+  height: 5%;
+  border-radius: 5px;
+  /* border: 1px solid #FFAED7; */
+  margin-top: 5%;
+  background-color: #F7F7F7;
+  display: flex;
+  flex-direction: row;
+}
+
+.title_view {
+  width: 30%;
+  font-size: 12px;
+  margin-left: 2%;
+  display: flex;
+}
+
+.title_view_image {
+  width: 20%;
+  height: 100%;
+  position: relative;
+  /* top: 10%; */
+  margin-top: 5%;
+}
+
+.title_view_text {
+  width: 80%;
+  height: 100%;
+  margin-top: 5%;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  margin-top: 2%;
+}
+
+.title_text {
+  margin-left: 5%;
+}
+.middle_view{
+  width: 40%;
+  height: 100%;
+}
+.swipper_view_text {
+  width: 100%;
+  margin-top: 4%;
+  font-size: 12px;
+  height: 40rpx;
+  margin-left: 2%;
+}
+.final_view{
+  width: 30%;
+  height: 100%;
+  font-size: 12px;
+   margin-top: 1.5%; 
+}
+.icon_small{
+  width: 10px;
+  height: 10px;
+}
+.class_view{
+  width: 100%;
+  height: 40%;
+  margin-top: 2%;
+}
+.loop_content{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+.tuijian_image_view {
+  margin-left: 2%;
+  text-align: center;
+}
+.tuijian_image {
+  width: 50px;
+  height: 50px;
+}
+.tuijian_text {
+  font-size: 12px;
+}
+
+.tuijian_text_view {
+  margin-left: 2%;
+  text-align: center;
+}
+.item_content {
+  width: 25%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+}
+.discount_view{
+  width: 100%;
+  height: 40%;
+}
+.discount_title_view{
+  width: 100%;
+  height: 10%;
+  font-size: 14px;
+  text-align: center  ;
+  font-weight: bold;
+}
+.discount_content_view{
+  width: 100%;
+  height:90% ;
+}
+.TScrollView1 {
+  box-sizing: border-box;
+  white-space: nowrap;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.TViewRow1 {
+  box-sizing: border-box;
+  display: inline-block;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 30%;
+  height: 100%;
+  margin-right: 10px;
+  background-color: #fff;
+  border-radius: 2px;
+  position: relative
+  
+}
+.discount_t_text_view{
+  width: 100px;
+  height: 100px;
+}
+.sub_view_image {
+  width: 100%;
+  height: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.sub_text_view_title{
+    font-size: 14px;
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    margin-top: -10px;
+     margin-left: -20px; 
+     border-radius: 2px; 
+     width: 80px;
+    height: 20px;
+     font-weight: bold;
+    background-color: rgba(148,148,148,.5)
+}

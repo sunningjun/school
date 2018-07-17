@@ -1,0 +1,87 @@
+<view class='container'>
+  <scroll-view class='scroll' scroll-y='true'>
+    <view class='image_view'>
+      <swiper indicator-dots="{{indicator}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='swipper_view'>
+        <block wx:for="{{imgUrls}}">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+    <view class='search_view' bindtap='search'>
+      <view class='title_view'>
+        <view class='title_view_image'>
+          <image src='http://pbwu4o9j9.bkt.clouddn.com/search_black1.png' class='icon'></image>
+        </view>
+        <view class='title_view_text'>
+          <text class='title_text'>大家都在搜:</text>
+        </view>
+      </view>
+
+      <view class='middle_view'>
+        <swiper autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" vertical="{{vertical}}" class='swipper_view_text'>
+          <block wx:for="{{search}}">
+            <swiper-item>
+              <text class='sroll_text'>{{item}}</text>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+      <view class='final_view'>
+        <text>| 夏季新品</text>
+        <image src='http://pbwu4o9j9.bkt.clouddn.com/jian_black.png' class='icon_small'></image>
+      </view>
+    </view>
+
+    <view class='class_view'>
+      <view class='loop_content'>
+        <view class='item_content' wx:for="{{list}}" bindtap='turnToDetail' data-title='{{item.uiName}}'>
+          <view class='tuijian_image_view'>
+            <image src='{{item.image}}' class='tuijian_image'></image>
+          </view>
+          <view class='tuijian_text_view'>
+            <text class='tuijian_text'>{{item.uiName}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='discount_view'>
+      <view class='discount_title_view'>
+        <text>专 柜 旗 舰 店</text>
+      </view>
+      <view class='discount_content_view'>
+        <view class='loop_content'>
+          <view class='item_content' wx:for="{{brandlist}}" bindtap='turnToDetail' data-title='{{item.uiName}}'>
+            <view class='tuijian_image_view'>
+              <image src='{{item.image}}' class='tuijian_image'></image>
+            </view>
+            <!-- <view class='tuijian_text_view'>
+              <text class='tuijian_text'>{{item.uiName}}</text>
+            </view> -->
+          </view>
+        </view>
+      </view>
+
+    </view>
+
+    <view class='discount_view'>
+      <view class='discount_title_view'>
+        <text>百 变 T 恤</text>
+      </view>
+      <view class='discount_content_view'>
+        <scroll-view scroll-x="true" class="TScrollView1">
+          <view class="TViewRow1" wx:for="{{tlist}}" data-title='{{item.uiName}}' bindtap='turnToDetail'>
+            <image src='{{item.image}}' class='sub_view_image'>
+            </image>
+            <view class='discount_t_text_view' >
+              <text class='sub_text_view_title'>{{item.uiName}}</text>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+
+    </view>
+  </scroll-view>
+</view>

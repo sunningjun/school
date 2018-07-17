@@ -455,7 +455,22 @@ Page({
 
       })
     }
-
-    
+  },
+  turnToDetail:function(e){
+    var title=e.currentTarget.dataset.title;
+    wx.navigateTo({
+      url: 'detail/detail?title='+title,
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+  },
+  toChannel:function(){
+    wx.navigateTo({
+      url: 'channel/channel?title='+this.data.category,
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
   }
 })

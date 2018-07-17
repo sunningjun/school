@@ -16,12 +16,12 @@
       </view>
 
       <view class='loop_item_view' wx:for="{{popularList}}">
-        <view class='item_view'>
+        <view class='item_view' >
           <view class='item_title'>
             <text class='item_title_text'>{{item.category}}</text>
           </view>
           <view class='loop_content'>
-            <view class='item_content' wx:for="{{item.list}}">
+            <view class='item_content' wx:for="{{item.list}}" bindtap='turnToDetail' data-title='{{item.uiName}}'>
               <view class='tuijian_image_view'>
                 <image src='{{item.image}}' class='tuijian_image'></image>
               </view>
@@ -34,7 +34,7 @@
         </view>
       </view>
 
-      <view class="{{display==1?'turn_button':'none'}}">
+      <view class="{{display==1?'turn_button':'none'}}" bindtap='toChannel'>
         <view class='to_brand'>
           进入{{category}}频道
         </view>

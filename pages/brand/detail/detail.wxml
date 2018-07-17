@@ -1,3 +1,51 @@
 <view class='container'>
-  <view></view>
+  <view class='header'>
+    <view class="{{current==item.id?'item_view_selected':'item_view'}}" wx:for="{{titleList}}" id="{{item.id}}" bindtap='changeDisplay'>
+      <view class='item_view_text'>
+        <text class='title_text'>{{item.title}}</text>
+      </view>
+      <view class='item_view_image'>
+        <image src="{{current==item.id?item.selectimage:item.image}}" class='title_image'></image>
+      </view>
+
+    </view>
+  </view>
+  <view class='select_view'>
+    <view class='select_item_view' wx:for='{{tList}}'>
+      <view class='select_item_view_text'>
+        <text>{{item.title}}</text>
+      </view>
+      <view class='select_item_view_image'>
+        <image src='http://pbwu4o9j9.bkt.clouddn.com/bottom_black.png' class='nav_image'></image>
+      </view>
+
+    </view>
+  </view>
+
+  <scroll-view class='scroll_content' scroll-y='true'>
+
+     <view class='loop' > 
+       <view class='sub_item'  wx:for='{{closeList}}'>
+      <view class='images_view'>
+        <image src='{{item.image}}' class='sub_item_images'></image>
+      </view>
+      <view class='desrc_view'>
+        <view class='price_view'>
+          <text class='now_price'>{{item.newprice}}</text>
+          <text class='origin_price'>{{item.oldprice}}</text>
+          <text class='discount_price'>{{item.discountprice}}</text>
+        </view>
+        <view class='title_view'>
+          <text>{{item.title}}</text>
+        </view>
+        <view class='discount_view'>
+          <view class='discount_item_view'>{{item.discount}}</view>
+        </view>
+
+      </view>
+
+     </view> 
+    </view>
+   
+  </scroll-view>
 </view>

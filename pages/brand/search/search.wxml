@@ -1,0 +1,23 @@
+<view class='container'>
+  <view class='header'>
+    <view class='search_view'>
+      <image src='http://pbwu4o9j9.bkt.clouddn.com/search_black.png' class='icon'></image>
+      <input type='text' class='input_view' placeholder='搜索{{title}}品牌或商品'></input>
+    </view>
+
+    <!-- <text>取消</text> -->
+    <view class='cancel' bindtap='returnToLastPage'>取消</view>
+
+  </view>
+  <view class='content'>
+    <view class='content_title_view'>
+      <text class='content_title'>热门搜索</text>
+
+    </view>
+    <view class='loop_content'>
+      <view class='sub_item' wx:for='{{searchList}}' style='background-color:{{item.backgound}};width:{{item.with}}'>
+        <text class='sub_item_text'>{{item.title}}</text>
+      </view>
+    </view>
+  </view>
+</view>

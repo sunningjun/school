@@ -399,6 +399,7 @@
 .tuijian .middle {
   width: 100%;
   height: 75%;
+  background-color: white;
 }
 
 .tuijian .title .content {
@@ -443,6 +444,7 @@
   width: 100%;
   height: 100%;
   background-color: #fff;
+  
 }
 
 .TViewRow1 {
@@ -454,8 +456,9 @@
   width: 30%;
   height: 100%;
   margin-right: 10px;
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 2px;
+  background-image: "http://pbwu4o9j9.bkt.clouddn.com/T1.jpg"
 }
 
 .sub_text_view {
@@ -527,6 +530,7 @@
   height: 150px;
   background-color: white;
   margin-left: 5%;
+  margin-top: 5%;
 }
 
 .sub_item_images {
