@@ -1,79 +1,62 @@
-// pages/train/train.js
+// pages/train/detail/detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imgUrls: [
-      'http://pbwu4o9j9.bkt.clouddn.com/yasi.jpg',
-      'http://pbwu4o9j9.bkt.clouddn.com/jiaxia.jpg',
-      'http://pbwu4o9j9.bkt.clouddn.com/peixun.png'
-    ],
-    indicatordots: true,
-    autoplay: true,
-    interval: 5000,
-    duration: 1000,
-    indicator: true,
-    navList: [{
-      "title": "雅思托福",
-      "image": "http://pbwu4o9j9.bkt.clouddn.com/yasi.png"
+    titleList: [{
+      "id": "1",
+      "title": "人气",
+      "image": "http://pbwu4o9j9.bkt.clouddn.com/triangle.png",
+      "selectimage": "http://pbwu4o9j9.bkt.clouddn.com/triangle_bottom.png",
+      "colour": "#FF8040"
     },
     {
-      "title": "四六级",
-      "image": "http://pbwu4o9j9.bkt.clouddn.com/siliu.png"
+      "id": "2",
+      "title": "最新",
+      "image": "http://pbwu4o9j9.bkt.clouddn.com/triangle.png",
+      "selectimage": "http://pbwu4o9j9.bkt.clouddn.com/triangle_bottom.png",
+      "colour": "#FF8040"
     },
     {
-      "title": "考研",
-      "image": "http://pbwu4o9j9.bkt.clouddn.com/kaoyan.png"
-    },
-
-    {
-      "title": "公务员",
-      "image": "http://pbwu4o9j9.bkt.clouddn.com/gongwu.png"
-    },
-    {
-      "title": "驾校",
-      "image": "http://pbwu4o9j9.bkt.clouddn.com/jiaxiao.png"
-    },
-
-    {
-      "title": "资格证书",
-      "image": "http://pbwu4o9j9.bkt.clouddn.com/zhengshu.png"
-    },
-    {
-      "title": "兴趣技能",
-      "image": "http://pbwu4o9j9.bkt.clouddn.com/jineng.png"
-    },
-    {
-      "title": "其他",
-      "image": "http://pbwu4o9j9.bkt.clouddn.com/qita.png"
+      "id": "3",
+      "title": "价格",
+      "image": "http://pbwu4o9j9.bkt.clouddn.com/triangle.png",
+      "selectimage": "http://pbwu4o9j9.bkt.clouddn.com/triangle_bottom.png",
+      "colour": "#FF8040"
     }
     ],
-    tuijianList: [{
+    current:1,
+    detailList: [{
       "title": "托福高效冲刺班",
       "image": "http://pbwu4o9j9.bkt.clouddn.com/tuofu1.jpg",
-      "price": "14800"
+      "price": "14800",
+      "user": "4"
     },
     {
       "title": "平安驾校",
       "image": "http://pbwu4o9j9.bkt.clouddn.com/jiaxiaoke.jpg",
-      "price": "2500"
+      "price": "2500",
+      "user": "0"
     },
     {
       "title": "暑期吉他强训班",
       "image": "http://pbwu4o9j9.bkt.clouddn.com/jitapeixun.jpg",
-      "price": "4800"
+      "price": "4800",
+      "user": "3"
     },
     {
       "title": "新东方考研vip班",
       "image": "http://pbwu4o9j9.bkt.clouddn.com/xindongfang.jpg",
-      "price": "24800"
+      "price": "24800",
+      "user": "9"
     },
     {
       "title": "公务员面试强训班",
       "image": "http://pbwu4o9j9.bkt.clouddn.com/gongwuyuankaoshi.jpg",
-      "price": "7000"
+      "price": "7000",
+      "user": "5"
     }
     ]
   },
@@ -82,65 +65,75 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var title = options.title;
+    wx.setNavigationBarTitle({
+      title: title,
+    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+  
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+  
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-
+  
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+  
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+  
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
+  
   },
 
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+  
   },
-  turnToProduct: function (e) {
-    var title = e.currentTarget.dataset.title;
+  bindOrder:function(e){
+    var id=e.currentTarget.id;
+    this.setData({
+      current:id
+    })
+  },
+  turnToProduct:function(e){
+    var title=e.currentTarget.dataset.title;
     var price = e.currentTarget.dataset.price;
     wx.navigateTo({
-      url: 'product/product?title=' + title + '&price=' + price,
-      success: function (res) { },
-      fail: function (res) { },
-      complete: function (res) { },
+      url: '../product/product?title='+title+'&price='+price,
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
     })
+
   }
 })

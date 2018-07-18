@@ -1,0 +1,277 @@
+.container {
+  background-color: #f7f7f7;
+}
+
+.top {
+  width: 100%;
+  height: 60%;
+  background-color: white;
+}
+
+.swipper_view {
+  width: 100%;
+  height: 70%;
+}
+
+.leaflet {
+  width: 90%;
+  height: 100%;
+  margin-left: 5%;
+  border-radius: 2px;
+}
+
+.title {
+  width: 100%;
+  height: 30%;
+  font-size: 14px;
+}
+
+.title_view {
+  width: 100%;
+  height: 60%;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.scroll {
+  width: 100%;
+  height: 100%;
+}
+
+.title_text {
+  margin-left: 5%;
+  position: relative;
+  top: 25%;
+}
+
+.price_text_view {
+  margin-left: 5%;
+  height: 50%;
+  color: #ff8040;
+  margin-top: 1%;
+}
+
+.bottom {
+  width: 100%;
+  height: 25%;
+  margin-top: 3%;
+  background-color: white;
+}
+
+.newPrice {
+  font-size: 14px;
+}
+
+.oldPrice {
+  margin-left: 2%;
+  font-size: 12px;
+  color: grey;
+  text-decoration: line-through;
+}
+
+.header_picture {
+  width: 100%;
+  height: 40%;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+}
+
+.detail_image_view {
+  width: 20%;
+  height: 100%;
+  margin-left: 2%;
+}
+
+.head_photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 5%;
+}
+
+.detail_title_view {
+  font-size: 14px;
+  margin-top: 2%;
+}
+
+.detail_school_view {
+  font-size: 12px;
+  color: gray;
+}
+
+.detail_view {
+  width: 60%;
+  height: 100%;
+}
+
+.distance_view {
+  width: 20%;
+  height: 100%;
+}
+
+.distance_text {
+  font-size: 12px;
+  color: gray;
+  position: relative;
+  top: 20%;
+}
+
+.tel_view {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+.contact_text {
+  font-size: 14px;
+  color: gray;
+}
+
+.add_view {
+  width: 100%;
+  height: 50%;
+  margin-left: 2%;
+}
+
+.phone {
+  width: 25px;
+  height: 25px;
+  margin: 0 auto
+}
+
+.tel_title_view {
+  width: 80%;
+  height: 100%;
+}
+
+.tel_image_view {
+  width: 20%;
+  height: 100%;
+}
+
+.navigation {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  background-color: white;
+  margin-top: 2%;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  margin-left: 5%;
+  text-align: center;
+  /* margin-top: 2%; */
+  position: relative;
+  top: 10%;
+}
+
+.item-selected {
+  width: 100%;
+  height: 100%;
+  margin-right: 5%;
+  font-size: 12px;
+  font-weight: bolder;
+  border-bottom: medium solid #ffd887;
+  margin-left: 5%;
+  text-align: center;
+  position: relative;
+  top: 10%;
+  color: #FF8040
+}
+
+.item_text {
+  position: relative;
+  top: 2%;
+}
+.none{
+  display: none;
+}
+.counrse_content{
+  width: 100%;
+  height: 40%;
+  background-color: white;
+  margin-top: 2%;
+}
+.buy_content{
+  width: 100%;
+  height: 40%;
+  background-color: white;
+  margin-top: 2%;
+}
+.judge_content{
+  width: 100%;
+  height: 40%;
+  background-color: white;
+  margin-top: 2%;
+}
+.footer{
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  border-top: 1px solid #e6e6e6;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+}
+.footer_small_view{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  text-align: center;
+  color: #515151
+}
+.footer_big_view{
+  width: 80%;
+  height: 100%;
+  display: flex;
+}
+.buy{
+  width: 45%;
+  height: 80%;
+  background-color: #e6e6e6;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 2%;
+  border: 1px solid #C0C0C0
+
+}
+.consult{
+  width: 45%;
+  height: 80%;
+  background-color: #FF8040;
+  text-align: center;
+  margin-left: 5%;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-top: 2%;
+  color: white
+}
+.buy text {
+  position: relative;
+  top: 20%;
+  font-size: 14px;
+}
+.consult text{
+  position: relative;
+  top: 20%;
+}
+.content_title{
+  width: 100%;
+  height: 15%;
+  border-bottom: 1px solid #e6e6e6
+}
+.content_title text{
+  font-size: 14px;
+  margin-left: 2%;
+  position: relative;
+  top: 5%
+}
+

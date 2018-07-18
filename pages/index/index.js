@@ -47,7 +47,9 @@ Page({
         "images": "http://pbwu4o9j9.bkt.clouddn.com/pei.png",
         "text": "考级培训",
         "backgroudcolour": "#FB4C4C",
-        "id": "6"
+        "id": "6",
+        "url": "../train/train"
+
       },
       {
         "images": "http://pbwu4o9j9.bkt.clouddn.com/com.png",

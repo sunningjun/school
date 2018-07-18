@@ -1,0 +1,27 @@
+<view class='container'>
+  <view class='top'>
+    <view class='top_title_view'>
+      <text>智慧校园特惠，预约即可获得：</text>
+    </view>
+    <view class='top_content_view'>
+      <view class='sub_content_view'>
+        <text>60分钟试听课程</text>
+      </view>
+      <view class='sub_content_view'>
+        <text>报名制定课程送大礼包</text>
+      </view>
+      <view class='sub_content_view'>
+        <text>报名就减500元</text>
+      </view>
+    </view>
+  </view>
+  <view class='middle'>
+    <text>留下您的联系方式以便商户尽快联系您</text>
+  </view>
+  <view class='phone_view'>
+    <input type='number' class='phone_input' placeholder='联系电话'></input>
+  </view>
+  <view class='submit_button_view'>
+    <text>立即预约</text>
+  </view>
+</view>

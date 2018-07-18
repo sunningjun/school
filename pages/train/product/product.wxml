@@ -1,0 +1,74 @@
+<view class='container'>
+  <scroll-view class='scroll' scroll-y='true'>
+    <view class='top'>
+      <swiper indicator-dots="{{indicator}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='swipper_view'>
+        <block wx:for="{{imgUrls}}">
+          <swiper-item>
+            <image src="{{item}}" class="leaflet" />
+          </swiper-item>
+        </block>
+      </swiper>
+
+      <view class='title'>
+        <view class='title_view'>
+          <text class='title_text'>{{title}}</text>
+        </view>
+        <view class='price_view'>
+          <view class='price_text_view'>
+            <text class='newPrice'>￥1900</text>
+            <text class='oldPrice'>￥1900</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class='navigation'>
+      <view class="{{currentitem==1?'item-selected':'item'}}" bindtap='clickHeader' id="1" data-value="{{item.name}}">
+        <text class='item_text'>课程详情</text>
+      </view>
+      <view class="{{currentitem==2?'item-selected':'item'}}" bindtap='clickHeader' id="2" data-value="{{item.name}}">
+        <text class='item_text'>购买说明</text>
+      </view>
+      <view class="{{currentitem==3?'item-selected':'item'}}" bindtap='clickHeader' id="3" data-value="{{item.name}}">
+        <text class='item_text'>课程评价</text>
+      </view>
+    </view>
+
+    <view class="{{currentitem==1?'counrse_content':'none'}}">
+      <view class='content_title'>
+        <text>课程详情</text>
+      </view>
+      <view class='content_sub_view'></view>
+    </view>
+
+       <view class="{{currentitem==2?'buy_content':'none'}}">
+      <view class='content_title'>
+        <text>购买说明</text>
+      </view>
+      <view class='content_sub_view'></view>
+    </view>
+
+     <view class="{{currentitem==3?'judge_content':'none'}}">
+      <view class='content_title'>
+        <text>课程评价</text>
+      </view>
+      <view class='content_sub_view'></view>
+    </view>
+
+    <view class='footer'>
+      <view class='footer_small_view' bindtap='callPhone'>
+        <image src='http://pbwu4o9j9.bkt.clouddn.com/phone.png' class='phone'></image>
+        <text>电话</text>
+      </view>
+      <view class='footer_big_view'>
+        <view class='buy'>
+          <text>立即购买</text>
+        </view>
+        <view class='consult' bindtap='subsrcibeCourse'>
+          <text>预约试听</text>
+        </view>
+
+      </view>
+    </view>
+  </scroll-view>
+</view>

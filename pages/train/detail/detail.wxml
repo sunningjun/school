@@ -1,0 +1,37 @@
+<view class='container'>
+  <view class='header'>
+    <view class='header_sub_view' wx:for='{{titleList}}' id='{{item.id}}' bindtap='bindOrder'>
+      <text class='header_text' style='  color:{{current==item.id?item.colour:black}}'>{{item.title}}</text>
+      <image src='{{current==item.id?item.selectimage:item.image}}' class='header_icon'></image>
+    </view>
+  </view>
+  <scroll-view class='scroll' scroll-y='true'>
+    <view class='detail_sub_view' wx:for='{{detailList}}'>
+      <view  class='detail_image_view' bindtap='turnToProduct' data-title='{{item.title}}' data-price='{{item.price}}'>
+        <image src='{{item.image}}' class='content_image'></image>
+      </view>
+      <view class='detail_text_view' >
+        <view class='detail_text_title_view'>
+          <text>{{item.title}}</text>
+        </view>
+        <view class='detail_text_price_view'>
+
+          <view class='right'>
+            <text class='newPrice'>￥1400</text>
+            <view class='buyed_view'>
+              <image src='http://pbwu4o9j9.bkt.clouddn.com/person.png' class='buyed_image'></image>
+              <text>{{item.user}}人报名</text>
+            </view>
+          </view>
+
+          <view class='left'>
+            <view class='sub_button'>
+              <text>报名</text>
+            </view>
+          </view>
+
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

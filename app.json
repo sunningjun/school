@@ -1,8 +1,11 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/unused/add/add",
     "pages/train/train",
+    "pages/train/product/product",
+    "pages/train/subscribe/subscribe",
+    "pages/train/detail/detail",
+    "pages/unused/add/add",
     "pages/unused/product/product",
     "pages/unused/unused",
     "pages/unused/detail/detail",
@@ -25,7 +28,7 @@
     "backgroundTextStyle": "light",
     "navigationBarTitleText": "智慧校园",
     "navigationBarTextStyle": "black",
-    "navigationBarBackgroundColor": "white"
+    "navigationBarBackgroundColor": "#f7f7f7"
   },
   "tabBar": {
     "list": [
