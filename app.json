@@ -1,6 +1,10 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/computer/computer",
+    "pages/computer/guide/guide",
+    "pages/computer/channel/channel",
+    "pages/computer/detail/detail",
     "pages/train/train",
     "pages/train/product/product",
     "pages/train/subscribe/subscribe",

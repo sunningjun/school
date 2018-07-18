@@ -1,0 +1,39 @@
+<view class='container'>
+  <view class='navigator_view'>
+    <scroll-view scroll-y='true' class='scoll_cate'>
+      <view class='loop' wx:for="{{categoryList}}">
+        <view class="{{current==item.id?'content_nav_text_cate_selected':'content_nav_text_cate'}}" id='{{item.id}}' bindtap='showList' data-name='{{item.name}}'>
+          <view class='nav_text'>{{item.uiName}}</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class='content_view'>
+    <scroll-view class='scroll_content' scroll-y='true'>
+      <view class='image_view'>
+        <image src='http://pbwu4o9j9.bkt.clouddn.com/xuanchuan.jpg' class='content_image'></image>
+      </view>
+
+      <view class='loop_item_view'>
+        <view class='loop_content'>
+          <view class='item_content' wx:for="{{popularList}}" bindtap='turnToDetail' data-title='{{item.uiName}}'>
+            <view class='tuijian_image_view'>
+              <image src='{{item.image}}' class='tuijian_image'></image>
+            </view>
+            <view class='tuijian_text_view'>
+              <text class='tuijian_text'>{{item.uiName}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class='turn_button' bindtap='toChannel'>
+        <view class='to_brand'>
+          进入{{category}}频道
+        </view>
+      </view>
+
+    </scroll-view>
+  </view>
+</view>

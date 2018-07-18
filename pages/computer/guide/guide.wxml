@@ -1,0 +1,3 @@
+<scroll-view scroll-y='true' class='conainer' >
+  <view class='top_view'></view>
+</scroll-view>

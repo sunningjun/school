@@ -33,7 +33,7 @@
       </view>
       <view class='content_view'>
         <view class='content_sub_view' wx:for='{{tuijianList}}'>
-          <view class='sub_image_view' bindtap='turnToProduct' data-title='{{item.title}}' data-price='{{item.price}}'>
+          <view class='sub_image_view' bindtap='turnToProductDetail' data-title='{{item.title}}' data-price='{{item.price}}'>
             <image src='{{item.image}}' class='tuijian_image'></image>
           </view>
           <view class='content_text_view'>

@@ -1,0 +1,65 @@
+<view class='container'>
+  <scroll-view class='scroll' scroll-y='true'>
+    <view class='search_view' bindtap='search'>
+      <image src='http://pbwu4o9j9.bkt.clouddn.com/search_black.png' class='image_icon'></image>
+      <input type='text' class='input_view' placeholder='请输入关键字'></input>
+    </view>
+
+    <view class='top_view'>
+      <view class='image_view'>
+        <image class='top_image' src='http://pbwu4o9j9.bkt.clouddn.com/top_computer.png'></image>
+      </view>
+      <view class='text_view'>
+        <view class='top_title_view'>
+          <text>笔记本电脑选购指南</text>
+        </view>
+        <view class='descr_title_view'>
+          <text>请告诉我们您使用笔记本的目的，我们会为您选出合适的产品</text>
+        </view>
+      </view>
+      <view class='button_view'>
+        <image class='icon' src='http://pbwu4o9j9.bkt.clouddn.com/moreH.png'></image>
+      </view>
+    </view>
+    <view class='nav_view'>
+      <view class='header_sub_view' wx:for='{{navList}}' id='{{item.id}}' bindtap='bindOrder'>
+        <text class='header_text' style='  color:{{current==item.id?item.colour:black}}'>{{item.title}}</text>
+        <image src='{{current==item.id?item.selectimage:item.image}}' class='header_icon'></image>
+      </view>
+    </view>
+    <view class='class_view'>
+      <scroll-view scroll-x="true" class="TScrollView1">
+        <view class="TViewRow2" wx:for="{{imageList}}" data-title='{{item.uiName}}' bindtap='turnToDetail'>
+          <view class='scroll_image_view'>
+            <image class='scroll_image' src='{{item.image}}'></image>
+          </view>
+          <view class='scroll_text_view'>
+            <text>{{item.title}}</text>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <view class='desription_view'>
+      <view class='loop_content'>
+      <view class='desription_view_sub_item' wx:for='{{comList}}'>
+        <view class='descr_images_view'>
+          <image src='{{item.image}}' class='desription_view_sub_item_images'></image>
+        </view>
+        <view class='desrc_view'>
+          <view class='price_view'>
+            <text class='now_price'>{{item.newprice}}</text>
+            <text class='origin_price'>{{item.oldprice}}</text>
+            <text class='discount_price'>{{item.discountprice}}</text>
+          </view>
+          <view class='description_title_view'>
+            <text>{{item.title}}</text>
+          </view>
+          <view class='discount_view'>
+            <view class='discount_item_view'>{{item.discount}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    </view>
+  </scroll-view>
+</view>

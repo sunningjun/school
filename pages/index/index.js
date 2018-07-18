@@ -55,7 +55,9 @@ Page({
         "images": "http://pbwu4o9j9.bkt.clouddn.com/com.png",
         "text": "电脑专区",
         "backgroudcolour": "#e6e6e6",
-        "id": "4"
+        "id": "4",
+        "url": "../computer/computer"
+
       },
       {
         "images": "http://pbwu4o9j9.bkt.clouddn.com/pin.png",
