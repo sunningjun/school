@@ -18,10 +18,9 @@
   </view>
   <view class='content_view'>
     <textarea class='title_input' placeholder='宝贝内容'></textarea>
-    <!-- <input class='title_input' placeholder='宝贝标题'></input> -->
   </view>
-  <view class='image_view'>
-    <view class='upload_image_view' bindtap='uploadImage'>
+  <view class='image_view' >
+    <view class='upload_image_view' catchtap='uploadImage'>
       <image src='http://pbwu4o9j9.bkt.clouddn.com/camera.png' class='image'></image>
     </view>
   </view>
