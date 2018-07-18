@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/index/index",    
+    "pages/train/train",
+    "pages/unused/product/product",
     "pages/unused/unused",
     "pages/unused/detail/detail",
     "pages/unused/add/add",

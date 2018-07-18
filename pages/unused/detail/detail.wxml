@@ -1,6 +1,6 @@
 <view class='container'>
   <scroll-view class='scroll' scroll-y='true'>
-    <view class='sub_item_view' wx:for="{{proList}}">
+    <view class='sub_item_view' wx:for="{{proList}}" bindtap='turnToProductDetail' data-title='{{item.title}}' data-price='{{item.price}}'>
       <view class='image_view'>
         <image class='image' src='{{item.image}}'></image>
       </view>

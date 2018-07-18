@@ -1,0 +1,49 @@
+<view class='container'>
+  <view class='top'>
+    <swiper indicator-dots="{{indicator}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='swipper_view'>
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="leaflet" />
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <view class='title'>
+      <view class='title_view'>
+        <text class='title_text'>{{title}}</text>
+      </view>
+      <view class='price_view'>
+        <view class='price_text_view'>RMB {{price}}元</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='bottom'>
+    <view class='header_picture'>
+      <view class='detail_image_view'>
+        <image class='head_photo' src='http://pbwu4o9j9.bkt.clouddn.com/header.jpg'></image>
+      </view>
+      <view class='detail_view'>
+        <view class='detail_title_view'>哆啦A梦</view>
+        <view class='detail_school_view'>西安工业大学</view>
+      </view>
+      <view class='distance_view'>
+        <text class='distance_text'>1km</text>
+      </view>
+    </view>
+    <view class='contact_address'>
+      <view class='tel_view'>
+        <view class='tel_title_view'>
+          <text class='contact_text'>联系电话： *** **** 0084</text>
+        </view>
+        <view class='tel_image_view' bindtap='callPhone'>
+          <image src='http://pbwu4o9j9.bkt.clouddn.com/call.png' class='phone'></image>
+        </view>
+      </view>
+      <view class='add_view'>
+        <text class='contact_text'>联系地址：西安工业大学1号楼</text>
+      </view>
+    </view>
+  </view>
+
+</view>

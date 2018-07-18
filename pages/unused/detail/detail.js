@@ -105,5 +105,16 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  turnToProductDetail:function(e){
+    var title=e.currentTarget.dataset.title;
+    var price = e.currentTarget.dataset.price;
+
+    wx.navigateTo({
+      url: '../product/product?title='+title+'&price='+price,
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
   }
 })
