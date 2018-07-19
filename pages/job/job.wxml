@@ -1,0 +1,122 @@
+<scroll-view class='container' scroll-y='true'>
+  <view class='search_view' bindtap='search'>
+    <image src='http://pbwu4o9j9.bkt.clouddn.com/search_black.png' class='image_icon'></image>
+    <input type='text' class='input_view' placeholder='请输入关键字'></input>
+  </view>
+  <view class='content_view'>
+    <swiper indicator-dots="{{indicator}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='swipper_view'>
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="leaflet" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='nav_view'>
+    <view class='sub_view' wx:for="{{navList}}" bindtap='turnToProduct' data-title='{{item.title}}' bindtap='bindToGuide'>
+      <view class='image_view'>
+        <image src='{{item.image}}' class='nav_image'></image>
+      </view>
+      <view class='text_view'>
+        <text class='text'>{{item.title}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='job_view'>
+    <view class='job_nav_view'>
+      <view class="{{currentitem==1?'item-selected':'item'}}" bindtap='clickHeader' id="1" data-value="{{item.name}}">
+        <text class='item_text'>全部职位</text>
+      </view>
+      <view class="{{currentitem==2?'item-selected':'item'}}" bindtap='clickHeader' id="2" data-value="{{item.name}}">
+        <text class='item_text'>只看兼职</text>
+      </view>
+      <view class="{{currentitem==3?'item-selected':'item'}}" bindtap='clickHeader' id="3" data-value="{{item.name}}">
+        <text class='item_text'>只看全职</text>
+      </view>
+    </view>
+    <view class='job_content_view'>
+      <view class='job_item_view'>
+        <view class='job_item_title_view'>
+          <view class='job_item_title'>
+            <text>手机游戏推广员</text>
+          </view>
+          <view class='job_item_price'>
+            <text>130元/天</text>
+          </view>
+        </view>
+        <view class='job_item_middle_view'>
+          <image class='job_icon' src='http://pbwu4o9j9.bkt.clouddn.com/dingwei.png'></image>
+          <text> 雁塔</text>
+          <image class='job_icon two' src='http://pbwu4o9j9.bkt.clouddn.com/time_black.png'></image>
+          <text> 长期可做</text>
+        </view>
+        <view class='job_item_bottom_view'>
+          <view class='left'>
+            <view class='red_view green'>工资保障</view>
+            <view class='red_view gray'>日结</view>
+
+          </view>
+          <view class='right'>
+            <view class='red_view'>人气</view>
+          </view>
+        </view>
+      </view>
+
+      <view class='job_item_view'>
+        <view class='job_item_title_view'>
+          <view class='job_item_title'>
+            <text>绝味鸭脖促销</text>
+          </view>
+          <view class='job_item_price'>
+            <text>4-6k/月</text>
+          </view>
+        </view>
+        <view class='job_item_middle_view'>
+          <image class='job_icon' src='http://pbwu4o9j9.bkt.clouddn.com/dingwei.png'></image>
+          <text> 雁塔</text>
+          <image class='job_icon two' src='http://pbwu4o9j9.bkt.clouddn.com/time_black.png'></image>
+          <text> 长期可做</text>
+        </view>
+        <view class='job_item_bottom_view'>
+          <view class='left'>
+            <view class='red_view green'>工资保障</view>
+            <view class='red_view gray'>月结</view>
+          </view>
+          <view class='right'>
+            <view class='red_view'>人气</view>
+          </view>
+        </view>
+      </view>
+
+      <view class='job_item_view'>
+        <view class='job_item_title_view'>
+          <view class='job_item_title'>
+            <text>绝味鸭脖促销</text>
+          </view>
+          <view class='job_item_price'>
+            <text>4-6k/月</text>
+          </view>
+        </view>
+        <view class='job_item_middle_view'>
+          <image class='job_icon' src='http://pbwu4o9j9.bkt.clouddn.com/dingwei.png'></image>
+          <text> 雁塔</text>
+          <image class='job_icon two' src='http://pbwu4o9j9.bkt.clouddn.com/time_black.png'></image>
+          <text> 长期可做</text>
+        </view>
+        <view class='job_item_bottom_view'>
+          <view class='left'>
+            <view class='red_view green'>工资保障</view>
+            <view class='red_view gray'>月结</view>
+          </view>
+          <view class='right'>
+            <view class='red_view'>直聘</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+
+</scroll-view>

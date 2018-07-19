@@ -1,49 +1,18 @@
-// pages/brand/search/search.js
+// pages/news/news.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-      title:null,
-      searchList: [{
-        "title": "情侣装",
-        "backgound": "#F2F2F2",
-        "with": "20%"
-      },
-      {
-        "title": "反季疯抢199-100",
-        "backgound": "#FFCCCC",
-        "with": "35%"
-      },
-      {
-        "title": "夏日清仓购",
-        "backgound": "#FFCCCC",
-        "with": "20%"
-      },
-      {
-        "title": "反击特惠屯两件5折",
-        "backgound": "#FFCCCC",
-        "with": "35%"
-      },
-      {
-        "title": "夏日T恤",
-        "backgound": "#F2F2F2",
-        "with": "20%"
-      }]
+  
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var title = options.title;
-    this.setData({
-      title: title
-    })
-    wx.setNavigationBarTitle({
-      title: title,
-    })
+  
   },
 
   /**
@@ -93,10 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-  returnToLastPage:function(){
-    wx.navigateBack({
-      delta: 1,
-    })
   }
 })

@@ -17,7 +17,7 @@
           <text>请告诉我们您使用笔记本的目的，我们会为您选出合适的产品</text>
         </view>
       </view>
-      <view class='button_view'>
+      <view class='button_view' bindtap='turnToGuide'>
         <image class='icon' src='http://pbwu4o9j9.bkt.clouddn.com/moreH.png'></image>
       </view>
     </view>
@@ -41,25 +41,25 @@
     </view>
     <view class='desription_view'>
       <view class='loop_content'>
-      <view class='desription_view_sub_item' wx:for='{{comList}}'>
-        <view class='descr_images_view'>
-          <image src='{{item.image}}' class='desription_view_sub_item_images'></image>
-        </view>
-        <view class='desrc_view'>
-          <view class='price_view'>
-            <text class='now_price'>{{item.newprice}}</text>
-            <text class='origin_price'>{{item.oldprice}}</text>
-            <text class='discount_price'>{{item.discountprice}}</text>
+        <view class='desription_view_sub_item' wx:for='{{comList}}'>
+          <view class='descr_images_view'>
+            <image src='{{item.image}}' class='desription_view_sub_item_images'></image>
           </view>
-          <view class='description_title_view'>
-            <text>{{item.title}}</text>
-          </view>
-          <view class='discount_view'>
-            <view class='discount_item_view'>{{item.discount}}</view>
+          <view class='desrc_view'>
+            <view class='price_view'>
+              <text class='now_price'>{{item.newprice}}</text>
+              <text class='origin_price'>{{item.oldprice}}</text>
+              <text class='discount_price'>{{item.discountprice}}</text>
+            </view>
+            <view class='description_title_view'>
+              <text>{{item.title}}</text>
+            </view>
+            <view class='discount_view'>
+              <view class='discount_item_view'>{{item.discount}}</view>
+            </view>
           </view>
         </view>
       </view>
-    </view>
     </view>
   </scroll-view>
 </view>

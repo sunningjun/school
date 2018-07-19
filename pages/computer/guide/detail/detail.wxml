@@ -1,0 +1,33 @@
+<scroll-view scroll-y='true' class='container'>
+  <view class='top_view'>
+      <view class='title'>
+        <text>{{title}}</text>
+      </view>
+      <view class='content'>
+        <text class='top_content_text'>{{descr}}</text>
+      </view>
+  </view>
+  <view class='desription_view'>
+    <view class='loop_content'>
+      <view class='desription_view_sub_item' wx:for='{{comList}}'>
+        <view class='descr_images_view'>
+          <image src='{{item.image}}' class='desription_view_sub_item_images'></image>
+        </view>
+        <view class='desrc_view'>
+          <view class='price_view'>
+            <text class='now_price'>{{item.newprice}}</text>
+            <text class='origin_price'>{{item.oldprice}}</text>
+            <text class='discount_price'>{{item.discountprice}}</text>
+          </view>
+          <view class='description_title_view'>
+            <text>{{item.title}}</text>
+          </view>
+          <view class='discount_view'>
+            <view class='discount_item_view'>{{item.discount}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</scroll-view>

@@ -81,13 +81,20 @@ Page({
       "image": "http://pbwu4o9j9.bkt.clouddn.com/gaoduan.png",
       "decr": "时尚并兼顾性能"
     }],
+    title:'',
+    descr:'',
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var title = options.title;
+    var desc = options.descr;
+    this.setData({
+      title:title,
+      descr:desc
+    })
   },
 
   /**
@@ -137,15 +144,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  bindToDetail: function (e) {
-    var title = e.currentTarget.dataset.title;
-    var desc = e.currentTarget.dataset.decr;
-    wx.navigateTo({
-      url: 'detail/detail?title=' + title+'&descr='+desc,
-      success: function (res) { },
-      fail: function (res) { },
-      complete: function (res) { },
-    })
-  },
+  }
 })

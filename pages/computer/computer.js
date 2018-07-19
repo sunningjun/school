@@ -186,7 +186,7 @@ Page({
     }],
     current: 1,
     popularList: [],
-    category: "电脑",
+    category: "笔记本",
     display: 0,
    
 

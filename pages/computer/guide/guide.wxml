@@ -1,3 +1,56 @@
-<scroll-view scroll-y='true' class='conainer' >
-  <view class='top_view'></view>
+<scroll-view scroll-y='true' class='container'>
+  <view class='top_view'>
+    <view class='top_title_view'>
+      <view class='title'>
+        <text>笔记本选购指南</text>
+      </view>
+      <view class='content'>
+        <text class='top_content_text'>请告诉我们您使用笔记本的目的，我们会为您选出合适的产品</text>
+        <view class='more_view'>
+          <text>如果你想知道更多电脑知识，请点击按钮</text>
+          <view class='more_image_view'>
+            <image src='http://pbwu4o9j9.bkt.clouddn.com/more_black.png' class='icon'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='top_content_view'>
+      <view class='top_sub_view' wx:for="{{directionList}}" bindtap='bindToDetail' data-title='{{item.title}}' data-decr='{{item.decr}}'>
+        <view class='top_sub_image_view'>
+          <image class='top_icon' src='{{item.image}}' mode='aspectFit'></image>
+        </view>
+        <view class='top_sub_content_view' >
+          <text class='top_sub_content_view_title'>{{item.title}}</text>
+          <text class='top_sub_content_view_desc'>{{item.decr}}</text>
+        </view>
+        <view class='top_sub_more_view'>
+          <image src='http://pbwu4o9j9.bkt.clouddn.com/more_black.png' class='icon'></image>
+        </view>
+
+      </view>
+    </view>
+  </view>
+  <view class='desription_view'>
+    <view class='loop_content'>
+      <view class='desription_view_sub_item' wx:for='{{comList}}'>
+        <view class='descr_images_view'>
+          <image src='{{item.image}}' class='desription_view_sub_item_images'></image>
+        </view>
+        <view class='desrc_view'>
+          <view class='price_view'>
+            <text class='now_price'>{{item.newprice}}</text>
+            <text class='origin_price'>{{item.oldprice}}</text>
+            <text class='discount_price'>{{item.discountprice}}</text>
+          </view>
+          <view class='description_title_view'>
+            <text>{{item.title}}</text>
+          </view>
+          <view class='discount_view'>
+            <view class='discount_item_view'>{{item.discount}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
 </scroll-view>

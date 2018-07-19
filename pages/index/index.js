@@ -63,7 +63,8 @@ Page({
         "images": "http://pbwu4o9j9.bkt.clouddn.com/pin.png",
         "text": "兼职招聘",
         "backgroudcolour": "#80FF80",
-        "id": "4"
+        "id": "4",
+        "url": "../job/job"
       },
 
       {

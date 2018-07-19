@@ -291,4 +291,12 @@ Page({
       current: id
     })
   },
+  turnToGuide:function(){
+    wx.navigateTo({
+      url: '../guide/guide',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+  }
 })
