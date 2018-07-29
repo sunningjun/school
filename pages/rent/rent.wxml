@@ -1,0 +1,131 @@
+<scroll-view class='container' scroll-y='true'>
+  <view class='top_view'>
+    <swiper indicator-dots="{{indicator}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='swipper_view'>
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class='middle_view'>
+    <view class='search_view'>
+      <input class='input_view' type='text' placeholder='搜索房源'></input>
+      <image src='http://pbwu4o9j9.bkt.clouddn.com/search_black.png' class='search_image'></image>
+    </view>
+
+    <view class='nav_view'>
+      <view class='nav_item_view' bindtap='turnToRent'>
+        <view class='src_view'>
+          <image class='nav_image' src='http://pbwu4o9j9.bkt.clouddn.com/rent1.png'></image>
+        </view>
+        <view class='text_view'>
+          <text>我要租房</text>
+        </view>
+      </view>
+      <view class='nav_item_view'>
+        <view class='src_view'>
+          <image class='nav_image' src='http://pbwu4o9j9.bkt.clouddn.com/rent_out.png'></image>
+        </view>
+        <view class='text_view'>
+          <text>我要出租</text>
+        </view>
+      </view>
+    </view>
+
+    <view class='middle_bottom_view'>
+      <text>推荐房源</text>
+    </view>
+  </view>
+
+  <view class='bottom_view'>
+    <view class='bottom_sub_view'>
+      <view class='bottom_image_view'>
+        <image src='http://pbwu4o9j9.bkt.clouddn.com/rent_hourse1.jpg' class='rent_image'></image>
+      </view>
+      <view class='bottom_text_view'>
+        <view class='bottom_text_top_view'>
+          <view class='title_view'>
+            <text class='title_class'>合租 · 英发新苑 · 4室</text>
+          </view>
+          <view class='price_view'>
+            <text class='price_view_title'>主卧 · 28㎡ · 朝南</text>
+            <text class='price_view_text'>2750/月</text>
+          </view>
+        </view>
+        <view class='bottom_text_under_view'>
+          <view class='sub_item_view'>押一付一</view>
+          <view class='sub_item_view'>独卫</view>
+          <view class='sub_item_view'>集中公寓</view>
+        </view>
+      </view>
+    </view>
+
+       <view class='bottom_sub_view'>
+      <view class='bottom_image_view'>
+        <image src='http://pbwu4o9j9.bkt.clouddn.com/rent_hourse1.jpg' class='rent_image'></image>
+      </view>
+      <view class='bottom_text_view'>
+        <view class='bottom_text_top_view'>
+          <view class='title_view'>
+            <text class='title_class'>合租 · 英发新苑 · 4室</text>
+          </view>
+          <view class='price_view'>
+            <text class='price_view_title'>主卧 · 28㎡ · 朝南</text>
+            <text class='price_view_text'>2750/月</text>
+          </view>
+        </view>
+        <view class='bottom_text_under_view'>
+          <view class='sub_item_view'>押一付一</view>
+          <view class='sub_item_view'>独卫</view>
+          <view class='sub_item_view'>集中公寓</view>
+        </view>
+      </view>
+    </view>
+
+       <view class='bottom_sub_view'>
+      <view class='bottom_image_view'>
+        <image src='http://pbwu4o9j9.bkt.clouddn.com/rent_hourse1.jpg' class='rent_image'></image>
+      </view>
+      <view class='bottom_text_view'>
+        <view class='bottom_text_top_view'>
+          <view class='title_view'>
+            <text class='title_class'>合租 · 英发新苑 · 4室</text>
+          </view>
+          <view class='price_view'>
+            <text class='price_view_title'>主卧 · 28㎡ · 朝南</text>
+            <text class='price_view_text'>2750/月</text>
+          </view>
+        </view>
+        <view class='bottom_text_under_view'>
+          <view class='sub_item_view'>押一付一</view>
+          <view class='sub_item_view'>独卫</view>
+          <view class='sub_item_view'>集中公寓</view>
+        </view>
+      </view>
+    </view>
+
+       <view class='bottom_sub_view'>
+      <view class='bottom_image_view'>
+        <image src='http://pbwu4o9j9.bkt.clouddn.com/rent_hourse1.jpg' class='rent_image'></image>
+      </view>
+      <view class='bottom_text_view'>
+        <view class='bottom_text_top_view'>
+          <view class='title_view'>
+            <text class='title_class'>合租 · 英发新苑 · 4室</text>
+          </view>
+          <view class='price_view'>
+            <text class='price_view_title'>主卧 · 28㎡ · 朝南</text>
+            <text class='price_view_text'>2750/月</text>
+          </view>
+        </view>
+        <view class='bottom_text_under_view'>
+          <view class='sub_item_view'>押一付一</view>
+          <view class='sub_item_view'>独卫</view>
+          <view class='sub_item_view'>集中公寓</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

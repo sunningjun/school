@@ -1,0 +1,142 @@
+.container{
+  background-color: #f7f7f7
+}
+.top_view{
+  width: 100%;
+  height: 30%;
+}
+.swipper_view{
+  width: 100%;
+  height: 100%;
+}
+.slide-image{
+  width: 100%;
+  height: 100%;
+}
+.middle_view{
+  width: 100%;
+  height: 30%;
+  background-color: white
+}
+.search_view{
+  width: 90%;
+  height: 20%;
+  border: 2px solid #f7f7f7;
+  position: relative;
+  left: 5%;
+  border-radius: 20px;
+  display: flex;
+  background-color: white;
+  top: -5%
+}
+.input_view{
+  width: 80%;
+  height: 100%;
+}
+.search_image{
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin: auto
+}
+.nav_view{
+  width: 100%;
+  height: 60%;
+  border-bottom: 1px solid #f7f7f7;
+  display: flex;
+}
+.nav_item_view{
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+.nav_image{
+  width: 50px;
+  height: 50px;
+}
+.text_view{
+  font-size: 14px;
+}
+.middle_bottom_view{
+  width: 95%;
+  margin-left: 2%;
+  font-size: 12px;
+  color: gray;
+  
+}
+.bottom_view{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column
+}
+.bottom_sub_view{
+  width: 95%;
+  height: 25%;
+  background-color: white;
+  margin-left: 2%;
+  margin-top: 2%;
+  border-radius: 2px;
+  display: flex;
+}
+.bottom_image_view{
+  width: 40%;
+  height: 100%;
+  /* background-color: black */
+}
+.bottom_text_view{
+  width: 60%;
+  height: 100%;
+}
+.rent_image{
+  width: 90%;
+  height: 90%;
+  margin-left: 5%;
+  margin-top: 5%
+}
+.bottom_text_top_view{
+  width: 100%;
+  height: 60%;
+  border-bottom: 1px solid #f7f7f7
+}
+.title_class{
+  font-size: 14px;
+}
+.price_view{
+  display: flex;
+  height: 60%;
+  justify-content: space-between
+}
+.price_view_title{
+  font-size: 10px;
+  color: gray;
+  margin-top: 2%
+}
+.price_view_text{
+  font-size: 14px;
+  color: #FF8040
+}
+.title_view{
+  width: 100%;
+  height: 40%;
+}
+.bottom_text_under_view{
+  font-size: 10px;
+  display: flex
+}
+.sub_item_view{
+  width: 50px;
+  height: 20px;
+  background-color: #e6e6e6;
+  text-align: center;
+  justify-self: center;
+  margin-top: 2%;
+  border-radius: 2px;
+  margin-left: 2%
+}
+.input_view{
+  font-size: 12px;
+  text-align: center
+}

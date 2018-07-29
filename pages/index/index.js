@@ -84,7 +84,8 @@ Page({
         "images": "http://pbwu4o9j9.bkt.clouddn.com/zu.png",
         "text": "我要租房",
         "backgroudcolour": "#FFFFFF",
-        "id": "7"
+        "id": "7",
+        "url":"../rent/rent"
       }
     ],
     miaosha: [

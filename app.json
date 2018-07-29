@@ -1,6 +1,13 @@
 {
   "pages": [
-    "pages/index/index",
+          "pages/index/index",
+          
+            "pages/rent/out/out",
+            
+        "pages/rent/rent",
+        
+          
+      
     "pages/news/news",
     "pages/job/job",
     "pages/job/guide/guide",
