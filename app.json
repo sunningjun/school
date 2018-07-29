@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/rent/rent",
+    "pages/rent/detail/detail",
     "pages/rent/out/out",
     "pages/news/news",
     "pages/job/job",
