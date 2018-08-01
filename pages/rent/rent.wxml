@@ -24,7 +24,7 @@
           <text>我要租房</text>
         </view>
       </view>
-      <view class='nav_item_view'>
+      <view class='nav_item_view' bindtap='turnToOut'>
         <view class='src_view'>
           <image class='nav_image' src='http://pbwu4o9j9.bkt.clouddn.com/rent_out.png'></image>
         </view>

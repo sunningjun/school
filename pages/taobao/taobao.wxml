@@ -1,0 +1,54 @@
+<view class='container'>
+    <view class='search_view'>
+      <view class='search'>
+        <input type='text' placeholder='请输入关键字' class='search_input'></input>
+        <image src='http://pbwu4o9j9.bkt.clouddn.com/search_black1.png' class='search_icon'></image>
+      </view>
+    </view>
+
+  <scroll-view scroll-y='true' class='scroll_popular'>
+    <view class='top'>
+      <swiper indicator-dots="{{indicator}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='swipper_view'>
+        <block wx:for="{{imgUrls}}">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+    <view class='nav_view'>
+      <view class='sub_view' wx:for="{{navList}}" bindtap='turnToProduct' data-title='{{item.title}}'>
+        <view class='image_view'>
+          <image src='{{item.image}}' class='nav_image'></image>
+        </view>
+        <view class='text_view'>
+          <text class='text'>{{item.title}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='popular_view'>
+      <view class='title_view'>
+        <text>猜你喜欢</text>
+      </view>
+      <view class='content_view'>
+        <view class='content_sub_view' wx:for='{{tuijianList}}'>
+          <view class='sub_image_view' bindtap='turnToProductDetail' data-title='{{item.title}}' data-price='{{item.price}}'>
+            <image src='{{item.image}}' class='tuijian_image'></image>
+          </view>
+          <view class='content_text_view'>
+            <view class='content_title_view'>
+              <text>{{item.title}}</text>
+            </view>
+            <view class='content_contact_view'>
+              <text class='contact_text'>￥{{item.price}}</text>
+              <view class='contact_button'>
+                <text>立即报名</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

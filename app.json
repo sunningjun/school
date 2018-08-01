@@ -1,9 +1,10 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/taobao/taobao",
     "pages/rent/rent",
-    "pages/rent/detail/detail",
     "pages/rent/out/out",
+    "pages/rent/detail/detail",
     "pages/news/news",
     "pages/job/job",
     "pages/job/guide/guide",

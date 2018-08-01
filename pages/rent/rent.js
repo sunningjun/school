@@ -78,5 +78,13 @@ Page({
       fail: function(res) {},
       complete: function(res) {},
     })
+  },
+  turnToOut:function(){
+    wx.navigateTo({
+      url: 'out/out',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
   }
 })

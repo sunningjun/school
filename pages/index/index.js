@@ -71,7 +71,8 @@ Page({
         "images": "http://pbwu4o9j9.bkt.clouddn.com/chuang.png",
         "text": "校园淘宝",
         "backgroudcolour": "#FF8080",
-        "id": "5"
+        "id": "5",
+        "url":"../taobao/taobao"
       },
 
       {

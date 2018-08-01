@@ -1,1 +1,112 @@
-/* pages/rent/out/out.wxss */
+.container {
+  background-color: #f7f7f7;
+  font-size: 12px;
+}
+
+.image_view {
+  width: 95%;
+  background-color: white;
+  height: 15%;
+  position: relative;
+  /* top: 2%; */
+  margin-left: 2%;
+  margin-top: 2%;
+  border-radius: 5px;
+}
+
+.image {
+  width: 30px;
+  height: 30px;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+
+.upload_image_view {
+  width: 20%;
+  height: 60%;
+  background-color: #f7f7f7;
+  position: relative;
+  top: 20%;
+  border-radius: 2px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 8px;
+  text-align: center;
+  color:gray;
+}
+
+.top_view {
+  width: 95%;
+  height: 15%;
+  background-color: white;
+  margin-left: 2%;
+  border-radius: 5px;
+}
+.bottom_view {
+  width: 95%;
+  height: 15%;
+  background-color: white;
+  margin-left: 2%;
+  border-radius: 5px;
+  margin-top: 2%
+}
+.middle_view {
+  width: 95%;
+  height: 40%;
+  background-color: white;
+  margin-left: 2%;
+  border-radius: 5px;
+  margin-top: 2%
+}
+
+.text_view {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input_view {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top_sub_view {
+  width: 100%;
+  height: 50%;
+  border-bottom: 1px solid #f7f7f7;
+  display: flex;
+  margin-left: 2%;
+}
+.middle_sub_view {
+  width: 100%;
+  height: 20%;
+  border-bottom: 1px solid #f7f7f7;
+  display: flex;
+  margin-left: 2%;
+}
+
+.footer_view {
+  width: 95%;
+  height: 8%;
+  margin-left: 2%;
+  background-color: #ffd845;
+  /* position: fixed; */
+  bottom: 2%;
+  border-radius: 5px;
+  margin-top: 5%
+}
+
+.footer_button {
+  position: relative;
+  top: 25%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}

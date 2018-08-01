@@ -1,2 +1,118 @@
-<!--pages/rent/out/out.wxml-->
-<text>pages/rent/out/out.wxml</text>
+<scroll-view class='container' scroll-y='true'>
+
+  <view class='top_view'>
+    <view class='top_sub_view'>
+      <view class='text_view'>
+        <text class='top_sub_view_text'>小区名称</text>
+      </view>
+      <view class='input_view'>
+        <input type='text' placeholder='请输入小区'></input>
+      </view>
+    </view>
+    <view class='top_sub_view'>
+      <view class='text_view'>
+        <text class='top_sub_view_text'>楼栋(单元)</text>
+      </view>
+      <view class='input_view'>
+        <input type='text' placeholder='请输入楼栋号码'></input>
+      </view>
+    </view>
+  </view>
+
+  <view class='middle_view'>
+    <view class='middle_sub_view'>
+      <view class='text_view'>
+        <text class='top_sub_view_text'>总面积</text>
+      </view>
+      <view class='input_view'>
+        <input type='text' placeholder='输入面积'></input>
+      </view>
+    </view>
+    <view class='middle_sub_view'>
+      <view class='text_view'>
+        <text class='top_sub_view_text'>户型</text>
+      </view>
+      <view class='input_view'>
+        <input type='text' placeholder='输入户型'></input>
+      </view>
+    </view>
+
+    <view class='middle_sub_view'>
+      <view class='text_view'>
+        <text class='top_sub_view_text'>朝向</text>
+      </view>
+      <view class='input_view'>
+        <input type='text' placeholder='请选择朝向'></input>
+      </view>
+    </view>
+
+    <view class='middle_sub_view'>
+      <view class='text_view'>
+        <text class='top_sub_view_text'>楼层</text>
+      </view>
+      <view class='input_view'>
+        <input type='text' placeholder='请输入楼层'></input>
+      </view>
+    </view>
+
+    <view class='middle_sub_view'>
+      <view class='text_view'>
+        <text class='top_sub_view_text'>装修</text>
+      </view>
+      <view class='input_view'>
+        <input type='text' placeholder='请选择装修'></input>
+      </view>
+    </view>
+  </view>
+
+  <view class='bottom_view'>
+    <view class='top_sub_view'>
+      <view class='text_view'>
+        <text class='top_sub_view_text'>租金</text>
+      </view>
+      <view class='input_view'>
+        <input type='text' placeholder='请输入租金金额'></input>
+      </view>
+    </view>
+    <view class='top_sub_view'>
+      <view class='text_view'>
+        <text class='top_sub_view_text'>付款类型</text>
+      </view>
+      <view class='input_view'>
+        <input type='text' placeholder='请选择付款类型'></input>
+      </view>
+    </view>
+  </view>
+
+    <view class='bottom_view'>
+    <view class='top_sub_view'>
+      <view class='text_view'>
+        <text class='top_sub_view_text'>姓名</text>
+      </view>
+      <view class='input_view'>
+        <input type='text' placeholder='请输入您的姓名'></input>
+      </view>
+    </view>
+    <view class='top_sub_view'>
+      <view class='text_view'>
+        <text class='top_sub_view_text'>手机号</text>
+      </view>
+      <view class='input_view'>
+        <input type='text' placeholder='请输入联系方式'></input>
+      </view>
+    </view>
+  </view>
+
+  <view class='image_view'>
+    <view class='upload_image_view' catchtap='uploadImage'>
+      <image src='http://pbwu4o9j9.bkt.clouddn.com/camera.png' class='image'></image>
+      <text>添加图片/视频</text>
+    </view>
+  </view>
+
+  <view class='footer_view'>
+    <view class='footer_button'>
+      <text>发布</text>
+    </view>
+  </view>
+</scroll-view>
