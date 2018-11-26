@@ -1,0 +1,19 @@
+<view class='container'>
+  <view class='title_view'>
+    <input class='title_input' placeholder='店铺名称'></input>
+  </view>
+  <view class='image_view'>
+    <view class='upload_image_view' catchtap='uploadImage'>
+      <image src='http://pbwu4o9j9.bkt.clouddn.com/camera.png' class='image'></image>
+      <text class='iocn_text'>店铺头像</text>
+    </view>
+  </view>
+  <view class='content_view'>
+    <textarea class='title_input' placeholder='店铺描述'></textarea>
+  </view>
+  <view class='footer_view'>
+    <view class='footer_button'>
+      <text>点击进行实名认证</text>
+    </view>
+  </view>
+</view>

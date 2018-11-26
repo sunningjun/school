@@ -1,10 +1,10 @@
 <view class='container'>
-    <view class='search_view'>
-      <view class='search'>
-        <input type='text' placeholder='请输入关键字' class='search_input'></input>
-        <image src='http://pbwu4o9j9.bkt.clouddn.com/search_black1.png' class='search_icon'></image>
-      </view>
+  <view class='search_view'>
+    <view class='search'>
+      <input type='text' placeholder='请输入关键字' class='search_input'></input>
+      <image src='http://pbwu4o9j9.bkt.clouddn.com/search_black1.png' class='search_icon'></image>
     </view>
+  </view>
 
   <scroll-view scroll-y='true' class='scroll_popular'>
     <view class='top'>
@@ -32,21 +32,92 @@
         <text>猜你喜欢</text>
       </view>
       <view class='content_view'>
-        <view class='content_sub_view' wx:for='{{tuijianList}}'>
-          <view class='sub_image_view' bindtap='turnToProductDetail' data-title='{{item.title}}' data-price='{{item.price}}'>
-            <image src='{{item.image}}' class='tuijian_image'></image>
+        <view class='sub_item'>
+          <image src='http://pbwu4o9j9.bkt.clouddn.com/weiyi.jpg' class='sub_item_images'></image>
+          <view class='title'>
+            <text class='title_text'>春秋简单连帽男士卫衣</text>
           </view>
-          <view class='content_text_view'>
-            <view class='content_title_view'>
-              <text>{{item.title}}</text>
-            </view>
-            <view class='content_contact_view'>
-              <text class='contact_text'>￥{{item.price}}</text>
-              <view class='contact_button'>
-                <text>立即报名</text>
-              </view>
+          <view class='desrc'>
+            <text class='middle_price_text'>￥49</text>
+            <text class='middle_month_text'>月售 2900</text>
+            <view class='middle_more_view'>
+              <image src='http://pbwu4o9j9.bkt.clouddn.com/moredian.png' class='middle_more'></image>
             </view>
           </view>
+        </view>
+        <view class='sub_item'>
+          <image src='http://pbwu4o9j9.bkt.clouddn.com/weiyi.jpg' class='sub_item_images'></image>
+          <view class='title'>
+            <text class='title_text'>春秋简单连帽男士卫衣</text>
+          </view>
+          <view class='desrc'>
+            <text class='middle_price_text'>￥49</text>
+            <text class='middle_month_text'>月售 2900</text>
+            <view class='middle_more_view'>
+              <image src='http://pbwu4o9j9.bkt.clouddn.com/moredian.png' class='middle_more'></image>
+            </view>
+          </view>
+        </view>
+        <view class='sub_item'>
+          <image src='http://pbwu4o9j9.bkt.clouddn.com/weiyi.jpg' class='sub_item_images'></image>
+          <view class='title'>
+            <text class='title_text'>春秋简单连帽男士卫衣</text>
+          </view>
+          <view class='desrc'>
+            <text class='middle_price_text'>￥49</text>
+            <text class='middle_month_text'>月售 2900</text>
+            <view class='middle_more_view'>
+              <image src='http://pbwu4o9j9.bkt.clouddn.com/moredian.png' class='middle_more'></image>
+            </view>
+          </view>
+        </view>
+        <view class='sub_item'>
+          <image src='http://pbwu4o9j9.bkt.clouddn.com/weiyi.jpg' class='sub_item_images'></image>
+          <view class='title'>
+            <text class='title_text'>春秋简单连帽男士卫衣</text>
+          </view>
+          <view class='desrc'>
+            <text class='middle_price_text'>￥49</text>
+            <text class='middle_month_text'>月售 2900</text>
+            <view class='middle_more_view'>
+              <image src='http://pbwu4o9j9.bkt.clouddn.com/moredian.png' class='middle_more'></image>
+            </view>
+          </view>
+        </view>
+      </view>
+
+    </view>
+    <view class='bottom_nav_view'>
+      <view class='sub_bottom_view'>
+        <view class='sub_image_view'>
+          <image src='http://pbwu4o9j9.bkt.clouddn.com/masage.png' class='sub_nav_image'></image>
+        </view>
+        <view class='sub_text_view'>
+          <text class='text'>消息</text>
+        </view>
+      </view>
+      <view class='sub_bottom_view'>
+        <view class='sub_image_view'>
+          <image src='http://pbwu4o9j9.bkt.clouddn.com/shop_car.png' class='sub_nav_image'></image>
+        </view>
+        <view class='sub_text_view'>
+          <text class='text'>购物车</text>
+        </view>
+      </view>
+      <view class='sub_bottom_view' bindtap='turnToOpenShop'>
+        <view class='sub_image_view'>
+          <image src='http://pbwu4o9j9.bkt.clouddn.com/open.png' class='sub_nav_image'></image>
+        </view>
+        <view class='sub_text_view'>
+          <text class='text'>我要开店</text>
+        </view>
+      </view>
+      <view class='sub_bottom_view'>
+        <view class='sub_image_view'>
+          <image src='http://pbwu4o9j9.bkt.clouddn.com/user.png' class='sub_nav_image'></image>
+        </view>
+        <view class='sub_text_view'>
+          <text class='text'>我的</text>
         </view>
       </view>
     </view>

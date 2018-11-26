@@ -52,12 +52,11 @@ Page({
 
       },
       {
-        "images": "http://pbwu4o9j9.bkt.clouddn.com/com.png",
-        "text": "电脑专区",
-        "backgroudcolour": "#e6e6e6",
-        "id": "4",
-        "url": "../computer/computer"
-
+        "images": "../../images/icon/bigPerson.png",
+        "text": "校园大咖",
+        "backgroudcolour": "#FFFFFF",
+        "id": "7",
+        "url": "../rent/rent"
       },
       {
         "images": "http://pbwu4o9j9.bkt.clouddn.com/pin.png",
@@ -87,6 +86,14 @@ Page({
         "backgroudcolour": "#FFFFFF",
         "id": "7",
         "url":"../rent/rent"
+      },
+      {
+        "images": "http://pbwu4o9j9.bkt.clouddn.com/com.png",
+        "text": "电脑专区",
+        "backgroudcolour": "#e6e6e6",
+        "id": "4",
+        "url": "../computer/computer"
+
       }
     ],
     miaosha: [

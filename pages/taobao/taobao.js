@@ -16,37 +16,37 @@ Page({
     duration: 1000,
     indicator: true,
     navList: [{
-      "title": "雅思托福",
-      "image": "http://pbwu4o9j9.bkt.clouddn.com/yasi.png"
+      "title": "女装",
+      "image": "http://pbwu4o9j9.bkt.clouddn.com/famale_close.png"
     },
     {
-      "title": "四六级",
-      "image": "http://pbwu4o9j9.bkt.clouddn.com/siliu.png"
+      "title": "美妆洗护",
+      "image": "http://pbwu4o9j9.bkt.clouddn.com/make_up.png"
     },
     {
-      "title": "考研",
-      "image": "http://pbwu4o9j9.bkt.clouddn.com/kaoyan.png"
-    },
-
-    {
-      "title": "公务员",
-      "image": "http://pbwu4o9j9.bkt.clouddn.com/gongwu.png"
-    },
-    {
-      "title": "驾校",
-      "image": "http://pbwu4o9j9.bkt.clouddn.com/jiaxiao.png"
+      "title": "鞋靴",
+      "image": "http://pbwu4o9j9.bkt.clouddn.com/shose.png"
     },
 
     {
-      "title": "资格证书",
-      "image": "http://pbwu4o9j9.bkt.clouddn.com/zhengshu.png"
+      "title": "箱包",
+      "image": "http://pbwu4o9j9.bkt.clouddn.com/bag.png"
     },
     {
-      "title": "兴趣技能",
-      "image": "http://pbwu4o9j9.bkt.clouddn.com/jineng.png"
+      "title": "男装",
+      "image": "http://pbwu4o9j9.bkt.clouddn.com/male_close.png"
+    },
+
+    {
+      "title": "手机数码",
+      "image": "http://pbwu4o9j9.bkt.clouddn.com/phone_nav.png"
     },
     {
-      "title": "分类",
+      "title": "图书乐器",
+      "image": "http://pbwu4o9j9.bkt.clouddn.com/book_nav.png"
+    },
+    {
+      "title": "更多",
       "image": "http://pbwu4o9j9.bkt.clouddn.com/class_menu.png"
     }
     ],
@@ -150,6 +150,14 @@ Page({
       success: function (res) { },
       fail: function (res) { },
       complete: function (res) { },
+    })
+  },
+  turnToOpenShop:function(){
+    wx.navigateTo({
+      url: 'open/open',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
     })
   }
 })

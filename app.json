@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/taobao/open/open",
     "pages/taobao/taobao",
     "pages/rent/rent",
     "pages/rent/out/out",
@@ -38,7 +39,7 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarTitleText": "智慧校园",
+    "navigationBarTitleText": "筑梦工厂",
     "navigationBarTextStyle": "black",
     "navigationBarBackgroundColor": "#f7f7f7"
   },
